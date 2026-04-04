@@ -1,0 +1,11 @@
+# Dev server (not needed for deployment)
+serve.js
+serve.rb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

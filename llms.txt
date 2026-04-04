@@ -1,0 +1,45 @@
+# Payxem
+
+> Professional Invoicing & Payments for Freelancers and Businesses
+
+Payxem is a professional invoicing and payment tracking platform built for freelancers, consultants, and small businesses.
+
+It allows users to create invoices, send payment links, and track payments while actual payment processing is handled by third-party providers such as PayPal and Stripe.
+
+Payxem does not operate as a bank or payment processor. It does not hold or custody funds. It acts as a coordination and tracking layer for financial activity.
+
+## Core Features
+
+- Professional invoice creation with line items, tax, and due dates
+- Payment links and QR codes for quick payments
+- Ledger-based wallet tracking with real-time balance
+- Multi-currency support (52+ currencies with live exchange rates)
+- Multiple payment methods (PayPal, credit/debit cards, cryptocurrency)
+- XEM reward points program
+- Identity verification (KYC) for payout eligibility
+- Biometric login and PIN lock security
+
+## Target Users
+
+- Freelancers (designers, developers, writers, marketers)
+- Remote workers and consultants
+- Small businesses and service providers
+- Digital professionals in underserved markets
+
+## Regional Focus
+
+The platform is designed especially for underserved markets such as Pakistan, Bangladesh, India, and similar regions where access to global payment systems is limited.
+
+## Pricing
+
+- No monthly fees or setup costs
+- Transaction fee: 3.3% + $0.30 per payment received
+- Clients can choose to cover the processing fee at checkout
+- Free withdrawals (standard processing time)
+
+## Links
+
+- Website: https://payxem.com
+- App: https://app.payxem.com
+- Terms of Service: https://payxem.com/terms
+- Privacy Policy: https://payxem.com/privacy
