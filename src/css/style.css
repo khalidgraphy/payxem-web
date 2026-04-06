@@ -1243,7 +1243,7 @@ h1, h2, h3, h4, h5, h6 {
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
-  .footer-grid { grid-template-columns: 2fr repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.6fr repeat(3, 0.8fr) 1.4fr; gap: 24px; }
 }
 
 .footer-brand p {
