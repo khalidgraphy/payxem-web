@@ -38,6 +38,15 @@
   {% block structuredData %}{% endblock %}
 
   <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umamiId }}"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHNKYT3PEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NHNKYT3PEN');
+  </script>
 </head>
 <body>
 
