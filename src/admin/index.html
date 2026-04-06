@@ -41,6 +41,7 @@
     /* Login button */
     [class*="LoginButton"] {
       background-color: var(--px-brand) !important;
+      color: #fff !important;
       border-radius: 10px !important;
       font-family: 'Inter', sans-serif !important;
       font-weight: 600 !important;
@@ -49,6 +50,13 @@
     }
     [class*="LoginButton"]:hover {
       background-color: var(--px-brand-dark) !important;
+    }
+    [class*="LoginButton"] svg,
+    [class*="LoginButton"] img,
+    [class*="LoginButton"] [class*="Icon"] {
+      fill: #fff !important;
+      color: #fff !important;
+      filter: brightness(0) invert(1) !important;
     }
 
     /* App header / top bar */
