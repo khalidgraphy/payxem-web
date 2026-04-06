@@ -1,7 +1,7 @@
 ---
 title: "PayPal Alternative for Freelancers in Pakistan That Actually Works"
 description: "Looking for a PayPal alternative in Pakistan? Here are the best ways freelancers receive international payments in 2026, with real options that work."
-date: 2026-04-06
+date: 2025-04-06
 category: "Guides"
 featuredImage: "/images/PayPal Alternative for Freelancers in Pakistan.png"
 featuredImageAlt: "PayPal alternative for freelancers in Pakistan - Payxem payment platform"
@@ -102,5 +102,5 @@ But there is a better way to manage payments. Freelancers who combine invoicing,
 **Ready to simplify your payment workflow?** [Create your free Payxem account](https://app.payxem.com) and send your first invoice today.
 
 **Related reads:**
-- [How to Receive International Payments in Pakistan Without PayPal](/blog/2026-04-06-receive-international-payments-pakistan/)
-- [Best Payment Methods for Freelancers in Pakistan](/blog/2026-04-06-best-payment-methods-freelancers-pakistan/)
+- [How to Receive International Payments in Pakistan Without PayPal](/blog/receive-international-payments-pakistan/)
+- [Best Payment Methods for Freelancers in Pakistan](/blog/best-payment-methods-freelancers-pakistan/)

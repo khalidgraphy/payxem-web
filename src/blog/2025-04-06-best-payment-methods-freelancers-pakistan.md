@@ -1,7 +1,7 @@
 ---
 title: "Best Payment Methods for Freelancers in Pakistan (2026 Guide)"
 description: "Complete guide to the best payment methods for freelancers in Pakistan in 2026. Compare Payoneer, bank transfers, crypto, and invoicing platforms."
-date: 2026-04-06
+date: 2025-04-06
 category: "Guides"
 featuredImage: "/images/Best Payment Methods for Freelancers in Pakistan.png"
 featuredImageAlt: "Best payment methods for freelancers in Pakistan 2026 guide"
@@ -86,5 +86,5 @@ The best freelancers use the right method for each client and project. That is w
 **Start optimizing your payments:** [Create a free Payxem account](https://app.payxem.com). No monthly fees. Pay only when you get paid.
 
 **Related reads:**
-- [PayPal Alternative for Freelancers in Pakistan](/blog/2026-04-06-paypal-alternative-freelancers-pakistan/)
-- [How to Send Professional Invoices to International Clients](/blog/2026-04-06-send-professional-invoices-international-clients/)
+- [PayPal Alternative for Freelancers in Pakistan](/blog/paypal-alternative-freelancers-pakistan/)
+- [How to Send Professional Invoices to International Clients](/blog/send-professional-invoices-international-clients/)

@@ -1,7 +1,7 @@
 ---
 title: "Welcome to the Payxem Blog"
 description: "Introducing the Payxem blog — your new resource for invoicing tips, payment guides, and platform updates for freelancers worldwide."
-date: 2026-04-06
+date: 2025-04-06
 category: "Announcements"
 featuredImage: "/images/PayXem-Icon.png"
 featuredImageAlt: "Payxem logo"

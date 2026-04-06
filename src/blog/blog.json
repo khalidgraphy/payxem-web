@@ -2,5 +2,6 @@
   "layout": "blog-post.njk",
   "tags": "blog",
   "isHome": false,
-  "extraCss": "/css/blog.css"
+  "extraCss": "/css/blog.css",
+  "permalink": "/blog/{{ page.fileSlug | replace(r/^\\d{4}-\\d{2}-\\d{2}-/, '') }}/"
 }

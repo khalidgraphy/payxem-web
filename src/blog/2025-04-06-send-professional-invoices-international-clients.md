@@ -1,7 +1,7 @@
 ---
 title: "How to Send Professional Invoices to International Clients From Pakistan"
 description: "Learn how freelancers in Pakistan can send professional invoices to international clients. Step-by-step guide with tips to get paid faster."
-date: 2026-04-06
+date: 2025-04-06
 category: "Tips"
 featuredImage: "/images/How to Send Professional Invoices to International Clients.png"
 featuredImageAlt: "Send professional invoices to international clients from Pakistan"
@@ -89,5 +89,5 @@ It is a small step with big impact on your freelance career.
 **Get started:** [Create your free Payxem account](https://app.payxem.com) and send your first invoice in under 60 seconds. No monthly fees.
 
 **Related reads:**
-- [How to Receive International Payments in Pakistan](/blog/2026-04-06-receive-international-payments-pakistan/)
-- [Payoneer vs Payxem for Freelancers](/blog/2026-04-06-payoneer-vs-payxem-fees-speed-comparison/)
+- [How to Receive International Payments in Pakistan](/blog/receive-international-payments-pakistan/)
+- [Payoneer vs Payxem for Freelancers](/blog/payoneer-vs-payxem-fees-speed-comparison/)

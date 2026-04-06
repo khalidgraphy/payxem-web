@@ -1,7 +1,7 @@
 ---
 title: "How to Receive International Payments in Pakistan Without PayPal"
 description: "Step-by-step guide for freelancers in Pakistan to receive international payments without PayPal. Real methods, tools, and tips that work in 2026."
-date: 2026-04-06
+date: 2025-04-06
 category: "Guides"
 featuredImage: "/images/How to Receive International Payments in Pakistan.png"
 featuredImageAlt: "Receive international payments in Pakistan without PayPal - freelancer guide"
@@ -86,5 +86,5 @@ Freelancers who structure their payment process properly get paid faster and mor
 **Start now:** [Create a free Payxem account](https://app.payxem.com) and send your first invoice in under 60 seconds.
 
 **Related reads:**
-- [PayPal Alternative for Freelancers in Pakistan](/blog/2026-04-06-paypal-alternative-freelancers-pakistan/)
-- [How to Send Professional Invoices to International Clients](/blog/2026-04-06-send-professional-invoices-international-clients/)
+- [PayPal Alternative for Freelancers in Pakistan](/blog/paypal-alternative-freelancers-pakistan/)
+- [How to Send Professional Invoices to International Clients](/blog/send-professional-invoices-international-clients/)
