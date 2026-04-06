@@ -1,2 +1,0 @@
-# Redirect www to non-www (if custom domain is set up)
-# https://www.payxem.com/* https://payxem.com/:splat 301
