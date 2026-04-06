@@ -1,4 +1,132 @@
+# robots.txt for payxem.com
+# Allow all legitimate search, AI, SEO, AEO, and GEO bots
+# Block only known spam/scraper bots
+
+# === Default: Allow everything ===
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
+# === Google (Search + AI/Gemini) ===
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# === Bing / Yahoo ===
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# === OpenAI ===
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# === Anthropic / Claude ===
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# === Meta AI ===
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# === Apple / Siri ===
+User-agent: Applebot
+Allow: /
+
+# === Perplexity ===
+User-agent: PerplexityBot
+Allow: /
+
+# === Cohere ===
+User-agent: cohere-ai
+Allow: /
+
+# === Common Crawl ===
+User-agent: CCBot
+Allow: /
+
+# === Amazon / Alexa ===
+User-agent: Amazonbot
+Allow: /
+
+# === DuckDuckGo ===
+User-agent: DuckDuckBot
+Allow: /
+
+# === Yandex ===
+User-agent: YandexBot
+Allow: /
+
+# === Baidu ===
+User-agent: Baiduspider
+Allow: /
+
+# === SEO Tools ===
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: rogerbot
+Allow: /
+
+# === Block known spam/scraper bots ===
+User-agent: SurveyBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Mb2345Browser
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: Seekport
+Disallow: /
+
+# === Sitemap ===
 Sitemap: https://payxem.com/sitemap.xml
