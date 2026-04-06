@@ -1243,12 +1243,36 @@ h1, h2, h3, h4, h5, h6 {
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
-  .footer-grid { grid-template-columns: 20% 75%; gap: 5%; }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .footer-brand p { margin-top: 0; }
 }
-.footer-col-reads a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.footer-col-reads {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .footer-col-reads {
+    display: grid;
+  }
+  .footer-col-reads h4 { margin-bottom: 8px; }
+  .footer-reads-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 40px;
+  }
+  .footer-reads-list a {
+    padding: 3px 0;
+    font-size: .8125rem;
+  }
 }
 
 .footer-links-row {
