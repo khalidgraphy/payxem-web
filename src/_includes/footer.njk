@@ -20,12 +20,6 @@
         <a href="#">Contact</a>
         <a href="/blog/">Blog</a>
       </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/terms">Terms of Service</a>
-        <a href="/privacy">Privacy Policy</a>
-        <a href="#">Cookie Policy</a>
-      </div>
       <div class="footer-col footer-col-reads">
         <h4>Worth Reading</h4>
         {% for post in collections.blog | limit(5) %}
@@ -34,7 +28,15 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-bottom-inner" style="padding: 0;">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <span>Legal:</span>
+          <a href="/terms">Terms of Service</a>
+          <span class="footer-sep">|</span>
+          <a href="/privacy">Privacy Policy</a>
+          <span class="footer-sep">|</span>
+          <a href="#">Cookie Policy</a>
+        </div>
         <p class="footer-copyright">&copy; {{ site.copyrightYear }} Payxem. All rights reserved.</p>
       </div>
     </div>
