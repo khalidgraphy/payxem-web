@@ -2,8 +2,8 @@ backend:
   name: github
   repo: khalidgraphy/payxem-web
   branch: main
-  auth_type: pkce
-  app_id: Ov23linb9afw2x6Zzawf
+  base_url: https://payxem-cms-auth.khalidgraphy.workers.dev
+  auth_endpoint: /auth
 
 logo_url: /images/Payxem-main-logo.png
 site_url: https://payxem.com
