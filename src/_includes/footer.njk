@@ -7,24 +7,23 @@
         </a>
         <p>Professional Invoicing & Payments for individual freelancers and Businesses.</p>
       </div>
-      <div class="footer-col">
-        <h4>Product</h4>
-        <a href="/features">Features</a>
-        <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}">Pricing</a>
-        <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}">How It Works</a>
-        <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}">FAQ</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="/about">About</a>
-        <a href="#">Contact</a>
-        <a href="/blog/">Blog</a>
-      </div>
       <div class="footer-col footer-col-reads">
         <h4>Worth Reading</h4>
         {% for post in collections.blog | limit(5) %}
         <a href="{{ post.url }}">{{ post.data.title }}</a>
         {% endfor %}
+      </div>
+    </div>
+    <div class="footer-links-row">
+      <div class="footer-links-group">
+        <span>Important Links:</span>
+        <a href="/features">Features</a><span class="footer-sep">|</span>
+        <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}">Pricing</a><span class="footer-sep">|</span>
+        <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}">How It Works</a><span class="footer-sep">|</span>
+        <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}">FAQ</a><span class="footer-sep">|</span>
+        <a href="/about">About</a><span class="footer-sep">|</span>
+        <a href="#">Contact</a><span class="footer-sep">|</span>
+        <a href="/blog/">Blog</a>
       </div>
     </div>
     <div class="footer-bottom">

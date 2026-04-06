@@ -1243,8 +1243,28 @@ h1, h2, h3, h4, h5, h6 {
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
-  .footer-grid { grid-template-columns: 1.2fr repeat(2, 0.6fr) 1.8fr; gap: 20px; }
+  .footer-grid { grid-template-columns: 25% 70%; gap: 5%; }
 }
+
+.footer-links-row {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 16px 0;
+}
+.footer-links-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .75rem;
+  color: rgba(255,255,255,.35);
+  flex-wrap: wrap;
+}
+.footer-links-group span { color: rgba(255,255,255,.4); font-weight: 500; }
+.footer-links-group .footer-sep { color: rgba(255,255,255,.15); }
+.footer-links-group a {
+  color: rgba(255,255,255,.45);
+  transition: color var(--transition);
+}
+.footer-links-group a:hover { color: var(--teal); }
 
 .footer-brand p {
   font-size: .875rem;
