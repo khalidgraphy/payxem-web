@@ -10,14 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ── Payxem CMS Branding ── */
     :root {
       --px-brand: #1A3060;
       --px-brand-dark: #0F1D3D;
       --px-teal: #2BC4C0;
       --px-teal-dark: #1FA8A4;
       --px-bg: #F7F8FC;
-      --px-text: #1C1E21;
       --px-text-muted: #718096;
       --px-border: #E2E8F0;
     }
@@ -27,39 +25,33 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Login screen */
+    /* Login screen background */
     [class*="LoginPage"] {
       background: linear-gradient(160deg, #fff 0%, var(--px-bg) 50%, #EEF2F9 100%) !important;
     }
 
-    /* Replace Decap logo with Payxem logo */
+    /* Hide Decap logo — replaced by our brand header */
     [class*="CustomIconWrapper"],
     [class*="NetlifyLogoIcon"] {
       display: none !important;
     }
 
-    /* Login button */
-    [class*="LoginButton"] {
-      background-color: var(--px-brand) !important;
-      color: #fff !important;
-      border-radius: 10px !important;
-      font-family: 'Inter', sans-serif !important;
-      font-weight: 600 !important;
-      padding: 14px 28px !important;
-      transition: background-color 0.2s !important;
-    }
-    [class*="LoginButton"]:hover {
-      background-color: var(--px-brand-dark) !important;
-    }
-    [class*="LoginButton"] svg,
-    [class*="LoginButton"] img,
-    [class*="LoginButton"] [class*="Icon"] {
-      fill: #fff !important;
-      color: #fff !important;
-      filter: brightness(0) invert(1) !important;
+    /* Hide Decap footer branding */
+    [class*="LoginPage"] > div:last-child [class*="netlify"],
+    [class*="LoginPage"] [class*="AppFooter"],
+    [class*="LoginPage"] > div > a[href*="decap"],
+    [class*="LoginPage"] > div > a[href*="netlify"] {
+      display: none !important;
     }
 
-    /* App header / top bar */
+    /* Collapse the big empty space in the login form */
+    [class*="LoginPage"] [class*="LoginContainer"],
+    [class*="LoginPage"] > div {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    /* App header / top bar (after login) */
     [class*="AppHeader"] {
       background-color: var(--px-brand) !important;
     }
@@ -73,16 +65,36 @@
       font-family: 'Inter', sans-serif !important;
     }
 
-    /* Footer branding */
+    /* Custom login header */
+    #payxem-login-brand {
+      text-align: center;
+      padding: 40px 0 8px;
+      position: relative;
+      z-index: 10;
+    }
+    #payxem-login-brand img {
+      height: 32px;
+      margin-bottom: 8px;
+    }
+    #payxem-login-brand h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--px-brand);
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    /* Footer */
     #payxem-cms-footer {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
       text-align: center;
-      padding: 12px 16px;
+      padding: 10px 16px;
       font-family: 'Inter', sans-serif;
-      font-size: 0.75rem;
+      font-size: 0.6875rem;
       color: var(--px-text-muted);
       background: #fff;
       border-top: 1px solid var(--px-border);
@@ -96,25 +108,6 @@
     #payxem-cms-footer a:hover {
       color: var(--px-teal-dark);
       text-decoration: underline;
-    }
-
-    /* Custom login header */
-    #payxem-login-brand {
-      text-align: center;
-      padding: 48px 0 0;
-      position: relative;
-      z-index: 10;
-    }
-    #payxem-login-brand img {
-      height: 32px;
-      margin-bottom: 12px;
-    }
-    #payxem-login-brand h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--px-brand);
-      letter-spacing: -0.01em;
     }
   </style>
 </head>
@@ -132,7 +125,7 @@
   <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
 
   <script>
-    // Hide custom login brand once logged in (CMS takes over the page)
+    // Hide custom login brand once logged in
     var observer = new MutationObserver(function() {
       var header = document.querySelector('[class*="AppHeader"]');
       var brand = document.getElementById('payxem-login-brand');
