@@ -2,7 +2,7 @@ backend:
   name: github
   repo: khalidgraphy/payxem-web
   branch: main
-  base_url: https://payxem-cms-auth.payxem.workers.dev
+  base_url: https://payxem-cms-auth.sehlkardigital.workers.dev
   auth_endpoint: /auth
 
 logo_url: /images/Payxem-main-logo.png
