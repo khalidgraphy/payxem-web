@@ -1315,64 +1315,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-links-group a:hover { color: var(--teal); }
 
-/* Legal + Copyright row */
+/* Copyright + Disclaimer row */
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.08);
-  padding: 12px 0;
+  padding: 12px 0 16px;
 }
 .footer-bottom-inner {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  align-items: center;
 }
-@media (min-width: 768px) {
-  .footer-bottom-inner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.footer-legal-links {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  font-size: .6875rem;
-  color: rgba(255,255,255,.35);
-  flex-wrap: wrap;
-}
-.footer-legal-links > span:first-child {
-  color: var(--teal);
-  font-weight: 600;
-  margin-right: 10px;
-}
-.footer-legal-links .footer-sep {
-  color: rgba(255,255,255,.15);
-  margin: 0 8px;
-}
-.footer-legal-links a {
-  color: rgba(255,255,255,.4);
-  transition: color var(--transition);
-}
-.footer-legal-links a:hover { color: var(--teal); }
-
 .footer-copyright {
   font-size: .6875rem;
   color: rgba(255,255,255,.3);
-  text-align: center;
 }
-@media (min-width: 768px) {
-  .footer-copyright { text-align: right; }
-}
-
-.footer-legal {
-  padding: 20px 0;
-  border-top: 1px solid rgba(255,255,255,.05);
-}
-.footer-legal p {
-  font-size: .6875rem;
-  color: rgba(255,255,255,.25);
+.footer-disclaimer {
+  font-size: .625rem;
+  color: rgba(255,255,255,.2);
   line-height: 1.6;
-  max-width: 900px;
 }
 
 /* ── SCROLL ANIMATIONS ───────────────────────────────────────── */
