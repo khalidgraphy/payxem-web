@@ -3,7 +3,7 @@ title: "How to Receive International Payments in Pakistan Without PayPal"
 description: "Step-by-step guide for freelancers in Pakistan to receive international payments without PayPal. Real methods, tools, and tips that work in 2026."
 date: 2026-03-05
 category: "Guides"
-featuredImage: "/images/How to Receive International Payments in Pakistan.png"
+featuredImage: "/images/How to Receive International Payments in Pakistan.jpg"
 featuredImageAlt: "Receive international payments in Pakistan without PayPal - freelancer guide"
 readTime: 4
 ---
