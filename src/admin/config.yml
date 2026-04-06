@@ -36,13 +36,59 @@ collections:
       - { label: "Read Time (minutes)", name: "readTime", widget: "number", value_type: "int", min: 1, default: 3 }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  # ─── Home Page ───
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home-content"
+        label: "Home Page Content"
+        file: "src/_data/home.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Headline Line 1", name: "headline1", widget: "string" }
+              - { label: "Headline Line 2", name: "headline2", widget: "string" }
+              - { label: "Headline Gradient Text", name: "headlineGradient", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "CTA Primary Text", name: "ctaPrimaryText", widget: "string" }
+              - { label: "CTA Primary URL", name: "ctaPrimaryUrl", widget: "string" }
+              - { label: "CTA Secondary Text", name: "ctaSecondaryText", widget: "string" }
+              - { label: "CTA Secondary URL", name: "ctaSecondaryUrl", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+          - label: "FAQ Section"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button URL", name: "buttonUrl", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+
   # ─── Pages ───
   - name: "pages"
     label: "Pages"
     files:
       - name: "terms"
         label: "Terms of Service"
-        file: "src/pages/terms.njk"
+        file: "src/pages/terms.md"
         editor:
           preview: false
         fields:
@@ -53,7 +99,7 @@ collections:
 
       - name: "privacy"
         label: "Privacy Policy"
-        file: "src/pages/privacy.njk"
+        file: "src/pages/privacy.md"
         editor:
           preview: false
         fields:

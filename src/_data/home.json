@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "badge": "Now accepting payments worldwide",
+    "headline1": "Send Invoices.",
+    "headline2": "Accept Payments.",
+    "headlineGradient": "Get Paid.",
+    "subtitle": "Payxem gives freelancers, consultants, and small businesses a simple way to invoice clients and collect payments without the complexity of traditional platforms or expensive monthly fees.",
+    "ctaPrimaryText": "Start Free",
+    "ctaPrimaryUrl": "https://app.payxem.com",
+    "ctaSecondaryText": "See How It Works",
+    "ctaSecondaryUrl": "#how-it-works",
+    "note": "No signup fees. No monthly charges. Start invoicing in under 60 seconds."
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is Payxem free to use?",
+        "answer": "Yes. There are no monthly fees or setup costs. You only pay a small transaction fee (3.3% + $0.30) when you receive a payment. Your client can also choose to cover this fee at checkout."
+      },
+      {
+        "question": "What payment methods do my clients have?",
+        "answer": "Your clients can pay by PayPal, Stripe Link, credit or debit card, or cryptocurrency (USDT, BTC, ETH, and others). They choose their preferred method on the payment page."
+      },
+      {
+        "question": "How do I withdraw my money?",
+        "answer": "Once payments clear in your wallet, you can withdraw to a bank account (via IBAN), a crypto wallet (supporting multiple blockchains), or through Wise for international transfers."
+      },
+      {
+        "question": "Is Payxem available in my country?",
+        "answer": "Payxem is built to work globally, with a focus on regions where major payment services are limited or unavailable, such as Pakistan, Bangladesh, and similar markets. If you have internet access, you can use Payxem."
+      },
+      {
+        "question": "How long does it take to get paid?",
+        "answer": "Payments are held for a short clearing period by our payment partners for security purposes, then released to your available balance. Withdrawal times depend on your chosen method but typically take 1-3 business days."
+      },
+      {
+        "question": "Do I need to verify my identity?",
+        "answer": "Basic features are available immediately. Identity verification (KYC) is required to unlock payouts and higher limits. The process is quick and handled through a trusted verification partner."
+      },
+      {
+        "question": "Can I use Payxem on my phone?",
+        "answer": "Yes. Payxem is a progressive web app (PWA) that works on any device. You can install it on your phone for a native app-like experience without downloading from an app store."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Ready to Get Paid?",
+    "description": "Create your free account, send your first invoice, and start collecting payments today.",
+    "buttonText": "Create Free Account",
+    "buttonUrl": "https://app.payxem.com",
+    "note": "No credit card required. Start in under 60 seconds."
+  }
+}
