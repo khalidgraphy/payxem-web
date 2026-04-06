@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"{% if isHome %} class="no-js"{% endif %}>
+<head>
+  {% if isHome %}<script>document.documentElement.classList.remove('no-js')</script>{% endif %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1A3060">
+  <meta name="description" content="{{ description or site.description }}">
+  {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+  <meta name="robots" content="{{ robots or 'index, follow' }}">
+  {% if author %}<meta name="author" content="{{ author }}">{% endif %}
+
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ ogDescription or description or site.description }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ ogImage or site.url + '/images/PayXem-Icon.png' }}">
+  <meta property="og:site_name" content="Payxem">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle or title }}">
+  <meta name="twitter:description" content="{{ ogDescription or description or site.description }}">
+  <meta name="twitter:image" content="{{ ogImage or site.url + '/images/PayXem-Icon.png' }}">
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace('/index.html', '') }}">
+  <link rel="icon" type="image/png" href="/images/PayXem-Icon.png">
+  <link rel="apple-touch-icon" href="/images/PayXem-Icon.png">
+  <title>{{ title }}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  {% if extraCss %}<link rel="stylesheet" href="{{ extraCss }}">{% endif %}
+
+  {% block extraHead %}{% endblock %}
+  {% block structuredData %}{% endblock %}
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umamiId }}"></script>
+</head>
+<body>
+
+  {% include "nav.njk" %}
+
+  {% block content %}{{ content | safe }}{% endblock %}
+
+  {% include "footer.njk" %}
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

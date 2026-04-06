@@ -1,0 +1,49 @@
+# Payxem
+
+> Online Invoicing & Payment Platform for Freelancers | PayPal Alternative for Pakistan
+
+Payxem is an online invoicing and payment tracking platform built for freelancers, consultants, and small businesses — especially in Pakistan, Bangladesh, and other underserved markets where PayPal is unavailable or restricted.
+
+It provides a PayPal alternative and Stripe solution for freelancers in Pakistan who need to invoice international clients, accept online payments, and get paid without expensive monthly subscriptions. Users can create invoices, send payment links, and track payments while actual payment processing is handled by third-party providers such as PayPal, Stripe, and cryptocurrency networks.
+
+Payxem does not operate as a bank or payment processor. It does not hold or custody funds. It acts as a coordination and tracking layer for financial activity.
+
+## Core Features
+
+- Professional invoice creation with line items, tax, and due dates
+- Payment links and QR codes for quick payments
+- Ledger-based wallet tracking with real-time balance
+- Multi-currency support (52+ currencies with live exchange rates)
+- Multiple payment methods (PayPal, credit/debit cards, cryptocurrency)
+- XEM reward points program
+- Identity verification (KYC) for payout eligibility
+- Biometric login and PIN lock security
+
+## Target Users
+
+- Freelancers in Pakistan, Bangladesh, and South Asia (designers, developers, writers, marketers)
+- Remote workers and consultants who need to receive international payments
+- Small businesses and service providers looking for a PayPal or Stripe alternative
+- Digital professionals in underserved markets where global payment platforms are restricted
+
+## Regional Focus
+
+Payxem is designed as an online payment solution for Pakistan and similar regions where PayPal is banned, restricted, or unavailable. Freelancers in Pakistan can use Payxem to invoice international clients, accept credit card and crypto payments, and withdraw to local bank accounts via IBAN or Wise. It also serves freelancers in Bangladesh, India, and other South Asian markets where access to Stripe and PayPal is limited.
+
+## Pricing
+
+- No monthly fees or setup costs
+- Transaction fee: 3.3% + $0.30 per payment received
+- Clients can choose to cover the processing fee at checkout
+- Free withdrawals (standard processing time)
+
+## Keywords
+
+PayPal alternative Pakistan, Stripe alternative Pakistan, online payment solution Pakistan, freelancer invoicing Pakistan, how to receive international payments in Pakistan, send invoice online Pakistan, payment link generator, free invoice software for freelancers, crypto payments Pakistan, get paid online without PayPal, freelancer billing tool Bangladesh, online invoicing platform South Asia
+
+## Links
+
+- Website: https://payxem.com
+- App: https://app.payxem.com
+- Terms of Service: https://payxem.com/terms
+- Privacy Policy: https://payxem.com/privacy

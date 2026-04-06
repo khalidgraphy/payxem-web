@@ -1,0 +1,6 @@
+{
+  "layout": "blog-post.njk",
+  "tags": "blog",
+  "isHome": false,
+  "extraCss": "/css/blog.css"
+}

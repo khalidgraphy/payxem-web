@@ -1,0 +1,28 @@
+<nav class="nav{% if not isHome %} scrolled{% endif %}"{% if isHome %} id="nav"{% endif %} role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Payxem Home">
+      <img src="/images/Payxem-main-logo.png" alt="Payxem — freelancer invoicing and payment platform" width="120" height="30">
+    </a>
+    <div class="nav-links">
+      <a href="/features" class="nav-link"{% if activeNav == "features" %} style="color: var(--brand); font-weight: 600;"{% endif %}>Features</a>
+      <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}" class="nav-link">How It Works</a>
+      <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}" class="nav-link">Pricing</a>
+      <a href="{% if isHome %}#security{% else %}/#security{% endif %}" class="nav-link">Security</a>
+      <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}" class="nav-link">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://app.payxem.com" class="btn btn-primary" target="_blank" rel="noopener">Start Free</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <div class="nav-toggle-icon"><span></span><span></span><span></span></div>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="/features" data-nav-close>Features</a>
+    <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}" data-nav-close>How It Works</a>
+    <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}" data-nav-close>Pricing</a>
+    <a href="{% if isHome %}#security{% else %}/#security{% endif %}" data-nav-close>Security</a>
+    <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}" data-nav-close>FAQ</a>
+    <a href="https://app.payxem.com" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Start Free</a>
+  </div>
+</nav>

@@ -1,0 +1,125 @@
+---
+layout: base.njk
+---
+{% block extraHead %}
+<style>
+  .about-hero {
+    padding: calc(var(--nav-h) + 64px) 0 64px;
+    background: linear-gradient(160deg, #fff 0%, var(--bg-alt) 50%, #EEF2F9 100%);
+    text-align: center;
+  }
+  .about-hero .section-subtitle {
+    max-width: 680px;
+  }
+  .about-section {
+    padding: 80px 0;
+  }
+  .about-section:nth-child(even) {
+    background: var(--bg-alt);
+  }
+  .about-section-inner {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .about-section-inner h2 {
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  .about-section-inner > p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+  .about-section-inner > p:last-child {
+    margin-bottom: 0;
+  }
+  .about-section-inner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .about-section-inner li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: .9375rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .about-section-inner li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    margin-top: 8px;
+  }
+  .about-section-inner li a {
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition);
+  }
+  .about-section-inner li a:hover {
+    color: var(--teal-dark);
+  }
+  .about-section-inner .emphasis {
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.75;
+  }
+  .final-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .final-section h2 {
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    margin-bottom: 16px;
+  }
+  .final-section p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    max-width: 600px;
+    margin: 0 auto 8px;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Payxem",
+  "description": "{{ description }}",
+  "url": "{{ site.url }}/about",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Payxem",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+{% endblock %}
+
+<main>
+  {{ content | safe }}
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 class="headline-lg">Ready to Get Paid?</h2>
+        <p>Create your free account, send your first invoice, and start collecting payments today.</p>
+        <a href="{{ site.appUrl }}" class="btn btn-white btn-lg" target="_blank" rel="noopener">
+          Create Free Account
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
+        <p class="cta-note">No credit card required. Start in under 60 seconds.</p>
+      </div>
+    </div>
+  </section>
+</main>

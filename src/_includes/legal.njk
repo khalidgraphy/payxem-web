@@ -1,0 +1,93 @@
+---
+layout: base.njk
+---
+{% block extraHead %}
+<style>
+  .legal-page {
+    padding: calc(var(--nav-h) + 48px) 0 80px;
+    min-height: 100vh;
+  }
+  .legal-content {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .legal-content h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    margin-bottom: 8px;
+  }
+  .legal-updated {
+    font-size: .875rem;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .legal-intro {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 40px;
+  }
+  .legal-section {
+    margin-bottom: 40px;
+  }
+  .legal-section h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  .legal-section h3 {
+    font-size: .9375rem;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    color: var(--text);
+  }
+  .legal-section p {
+    font-size: .9375rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+  .legal-section ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  .legal-section li {
+    font-size: .9375rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    list-style: disc;
+    margin-bottom: 4px;
+  }
+  .legal-section a {
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .legal-section a:hover {
+    color: var(--teal-dark);
+  }
+  .legal-section strong {
+    color: var(--text);
+  }
+  .legal-footer-note {
+    font-size: .8125rem;
+    color: var(--text-muted);
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+{% endblock %}
+
+<main class="legal-page">
+  <div class="container">
+    <div class="legal-content">
+      <h1>{{ title }}</h1>
+      <p class="legal-updated">Last updated: {{ lastUpdated }}</p>
+      {% if intro %}<p class="legal-intro">{{ intro | safe }}</p>{% endif %}
+      {{ content | safe }}
+      <p class="legal-footer-note">&copy; {{ site.copyrightYear }} Payxem. All rights reserved.</p>
+    </div>
+  </div>
+</main>

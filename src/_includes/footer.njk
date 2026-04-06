@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" aria-label="Payxem Home">
+          <img src="/images/Payxem-main-logo.png" alt="Payxem — freelancer invoicing and payment platform" width="120" height="30" style="filter: brightness(0) invert(1);">
+        </a>
+        <p>Professional Invoicing & Payments for individual freelancers and Businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="/features">Features</a>
+        <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}">Pricing</a>
+        <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}">How It Works</a>
+        <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about">About</a>
+        <a href="#">Contact</a>
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner" style="padding: 0;">
+        <p class="footer-copyright">&copy; {{ site.copyrightYear }} Payxem. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>Payxem is an invoicing and financial tracking platform, not a bank or payment processor. Payments are processed through third-party providers such as PayPal and Stripe and may be received into accounts designated by Payxem or its affiliated entities for settlement and distribution. Payxem does not provide banking or custodial financial services.</p>
+    </div>
+  </div>
+</footer>

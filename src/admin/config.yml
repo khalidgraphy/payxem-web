@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: khalidgraphy/payxem-web
+  branch: main
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+
+  # ─── Blog Posts ───
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", hint: "Short summary for SEO and blog cards (max ~160 chars)" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Announcements", "Guides", "Tips", "Product Updates", "Industry"], default: "Guides" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Featured Image Alt Text", name: "featuredImageAlt", widget: "string", required: false }
+      - { label: "Read Time (minutes)", name: "readTime", widget: "number", value_type: "int", min: 1, default: 3 }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ─── Pages ───
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "terms"
+        label: "Terms of Service"
+        file: "src/pages/terms.njk"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "text" }
+          - { label: "Last Updated", name: "lastUpdated", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "privacy"
+        label: "Privacy Policy"
+        file: "src/pages/privacy.njk"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "text" }
+          - { label: "Last Updated", name: "lastUpdated", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

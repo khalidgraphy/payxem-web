@@ -2,6 +2,11 @@
 serve.js
 serve.rb
 
+# Build
+node_modules/
+_site/
+.cache/
+
 # OS
 .DS_Store
 Thumbs.db

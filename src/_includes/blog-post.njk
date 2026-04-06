@@ -1,0 +1,81 @@
+---
+layout: base.njk
+---
+{% block extraHead %}
+<link rel="stylesheet" href="/css/blog.css">
+{% endblock %}
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "description": "{{ description }}",
+  "datePublished": "{{ date | isoDate }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Payxem"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Payxem",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/PayXem-Icon.png"
+    }
+  },
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}"{% if featuredImage %},
+  "image": "{{ site.url }}{{ featuredImage }}"{% endif %}
+}
+</script>
+{% endblock %}
+
+<main>
+  <section class="blog-post-hero">
+    <div class="container">
+      <div class="blog-post-header">
+        <a href="/blog/" class="blog-back-link">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z" clip-rule="evenodd"/></svg>
+          Back to Blog
+        </a>
+        {% if category %}<div class="section-label">{{ category }}</div>{% endif %}
+        <h1 class="headline-lg">{{ title }}</h1>
+        <div class="blog-post-meta">
+          <time datetime="{{ date | isoDate }}">{{ date | dateFormat }}</time>
+          {% if readTime %}<span class="meta-sep">&middot;</span><span>{{ readTime }} min read</span>{% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if featuredImage %}
+  <div class="container">
+    <div class="blog-featured-image">
+      <img src="{{ featuredImage }}" alt="{{ featuredImageAlt or title }}" loading="eager">
+    </div>
+  </div>
+  {% endif %}
+
+  <section class="blog-post-body">
+    <div class="container">
+      <div class="blog-content">
+        {{ content | safe }}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 class="headline-lg">Ready to Get Paid?</h2>
+        <p>Create your free account, send your first invoice, and start collecting payments today.</p>
+        <a href="{{ site.appUrl }}" class="btn btn-white btn-lg" target="_blank" rel="noopener">
+          Create Free Account
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
+        <p class="cta-note">No credit card required. Start in under 60 seconds.</p>
+      </div>
+    </div>
+  </section>
+</main>
