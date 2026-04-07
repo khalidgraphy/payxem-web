@@ -15,10 +15,6 @@ isHome: false
     background: linear-gradient(160deg, #fff 0%, var(--bg-alt) 50%, #EEF2F9 100%);
     text-align: center;
   }
-  .start-content {
-    max-width: 740px;
-    margin: 0 auto;
-  }
   .start-section {
     padding: 48px 0;
   }
@@ -115,6 +111,46 @@ isHome: false
     line-height: 1.75;
     margin-bottom: 0;
   }
+
+  /* App screenshot styling */
+  .start-screenshot {
+    margin: 24px 0 8px;
+    text-align: center;
+  }
+  .start-screenshot img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.12);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center 8%;
+    aspect-ratio: 9 / 17;
+  }
+  .start-screenshot-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 24px 0 8px;
+  }
+  .start-screenshot-row img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.12);
+    border: 1px solid var(--border);
+    object-fit: cover;
+    object-position: center 8%;
+    aspect-ratio: 9 / 17;
+  }
+  @media (max-width: 640px) {
+    .start-screenshot img { max-width: 220px; }
+    .start-screenshot-row img { max-width: 160px; }
+  }
 </style>
 
 <script type="application/ld+json">
@@ -141,6 +177,9 @@ isHome: false
       <div class="section-label">Getting Started</div>
       <h1 class="headline-lg">How to Start with Payxem</h1>
       <p class="section-subtitle">From signup to your first payment in under 60 seconds. No monthly fees. No complexity.</p>
+      <div class="start-screenshot">
+        <img src="/images/0 start  main app-page.png" alt="Payxem app dashboard showing wallet balance, invoices, and earnings" loading="eager">
+      </div>
     </div>
   </section>
 
@@ -150,6 +189,11 @@ isHome: false
         <div class="start-step-number">1</div>
         <h2>Create Your Free Account</h2>
         <p>Sign up at <a href="https://app.payxem.com">app.payxem.com</a> using your email. No credit card needed. No monthly fees. You will receive a magic link to verify your email and log in securely.</p>
+        <div class="start-screenshot-row">
+          <img src="/images/start 1 -Payxem_Login-signup.jpg" alt="Payxem signup and login screen" loading="lazy">
+          <img src="/images/start 2 magic link.jpg" alt="Payxem magic link login sent to email" loading="lazy">
+          <img src="/images/start 3 payxem email link.jpg" alt="Payxem magic link email with sign in button" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -158,8 +202,11 @@ isHome: false
     <div class="container">
       <div class="start-section-inner">
         <div class="start-step-number">2</div>
-        <h2>Complete Your Profile</h2>
-        <p>Add your business name, service type, and location. This information appears on your invoices and helps clients trust you.</p>
+        <h2>Set Your PIN</h2>
+        <p>After signing in, set a secure PIN for quick access to your dashboard. You can also enable biometric login (fingerprint or face recognition) for faster access.</p>
+        <div class="start-screenshot">
+          <img src="/images/start 4 - set PIN.png" alt="Payxem set PIN screen for secure quick access" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -168,6 +215,19 @@ isHome: false
     <div class="container">
       <div class="start-section-inner">
         <div class="start-step-number">3</div>
+        <h2>Complete Your Profile</h2>
+        <p>Add your business name, service type, and location. This information appears on your invoices and helps clients trust you.</p>
+        <div class="start-screenshot">
+          <img src="/images/start 5 Payxem_Profile_scr.jpg" alt="Payxem profile setup screen with business details" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="start-section">
+    <div class="container">
+      <div class="start-section-inner">
+        <div class="start-step-number">4</div>
         <h2>Set Up Your Payout Method</h2>
         <p>Go to your profile and add either:</p>
         <ul>
@@ -181,7 +241,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">4</div>
+        <div class="start-step-number">5</div>
         <h2>Verify Your Identity</h2>
         <p>Complete KYC verification to unlock withdrawals and higher limits. The process takes a few minutes through our verification partner. You will need a valid government ID.</p>
       </div>
@@ -191,7 +251,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">5</div>
+        <div class="start-step-number">6</div>
         <h2>Send Your First Invoice</h2>
         <ol>
           <li>Tap <strong>Create Invoice</strong> from your dashboard</li>
@@ -202,6 +262,9 @@ isHome: false
           <li>Hit <strong>Send</strong></li>
         </ol>
         <p>Your client receives a professional email with a <strong>Pay Now</strong> button. They can pay using PayPal, credit/debit card, or cryptocurrency.</p>
+        <div class="start-screenshot">
+          <img src="/images/start 6 Invoice create.png" alt="Payxem invoice creation screen with line items and payment link" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -209,7 +272,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">6</div>
+        <div class="start-step-number">7</div>
         <h2>Or Use a Payment Link</h2>
         <p>Not every job needs a full invoice. Create a <strong>Service Link</strong> with a fixed amount and a custom URL like <strong>app.payxem.com/p/yourname</strong>. Share it anywhere. Clients click, pay, done.</p>
       </div>
@@ -219,7 +282,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">7</div>
+        <div class="start-step-number">8</div>
         <h2>Track Your Earnings</h2>
         <p>Your dashboard shows everything in one place:</p>
         <ul>
@@ -228,6 +291,9 @@ isHome: false
           <li><strong>Transaction history</strong> with fee breakdowns</li>
           <li><strong>Invoice status</strong> (draft, sent, paid, completed)</li>
         </ul>
+        <div class="start-screenshot">
+          <img src="/images/start 7 payxem-wallet.png" alt="Payxem wallet and ledger showing balance, transactions, and earnings" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -235,7 +301,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">8</div>
+        <div class="start-step-number">9</div>
         <h2>Withdraw Your Money</h2>
         <p>Once your balance is available, request a payout to your bank account or crypto wallet. Withdrawals are free with standard processing. Admin reviews and approves within 1-2 business days.</p>
       </div>
@@ -245,7 +311,7 @@ isHome: false
   <section class="start-section">
     <div class="container">
       <div class="start-section-inner">
-        <div class="start-step-number">9</div>
+        <div class="start-step-number">10</div>
         <h2>Earn XEM Reward Points</h2>
         <p>You earn XEM points on every transaction, milestone, and referral. Redeem XEM for account credit to reduce your costs. The more you use Payxem, the more you save.</p>
       </div>
