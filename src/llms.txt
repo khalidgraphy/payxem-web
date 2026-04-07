@@ -33,7 +33,7 @@ Payxem is designed as an online payment solution for Pakistan and similar region
 ## Pricing
 
 - No monthly fees or setup costs
-- Transaction fee: 3.3% + $0.30 per payment received
+- Transaction fee: 3.5% + $0.30 per payment received
 - Clients can choose to cover the processing fee at checkout
 - Free withdrawals (standard processing time)
 

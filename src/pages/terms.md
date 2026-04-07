@@ -52,7 +52,7 @@ You are fully responsible for:
 
 ## 4. Payments and Fees
 
-Payxem charges a platform service fee of **3.3% + $0.30** per payment received. This fee is subject to change with or without prior notice. Any updates to fees will be reflected on the Payxem website and communicated to users via push notification.
+Payxem charges a platform service fee of **3.5% + $0.30** per payment received. This fee is subject to change with or without prior notice. Any updates to fees will be reflected on the Payxem website and communicated to users via push notification.
 
 ### Important:
 
