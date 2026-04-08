@@ -198,7 +198,7 @@ let _fxDate = '';
 
 async function initFX() {
   try {
-    const res = await fetch('https://app.payxem.com/api/exchange-rates');
+    const res = await fetch('https://app.payxem.com/api/exchange-rates?public=1');
     const data = await res.json();
     _fxRatesUSD = data.rates || {};
     _fxDate = data.date || '';
