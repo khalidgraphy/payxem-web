@@ -2,7 +2,7 @@
 layout: base.njk
 title: "Live Currency Exchange Rates — USD to PKR, BDT, INR, AED | Payxem"
 description: "Check today's live USD to PKR, BDT, INR, AED exchange rates. Free currency converter for freelancers in Pakistan, Bangladesh, India, and UAE. Updated hourly."
-keywords: "USD to PKR today, dollar to Pakistani rupee, USD to BDT, currency exchange rate Pakistan, dollar rate today, USD PKR rate, freelancer currency converter, USD to INR, USD to AED, live exchange rates Pakistan, dollar rate in Pakistan today, US dollar to PKR"
+keywords: "USD to PKR today, dollar to Pakistani rupee, USD to BDT, currency exchange rate Pakistan, dollar rate today, USD PKR rate, freelancer currency converter, USD to INR, USD to AED, live exchange rates Pakistan, dollar rate in Pakistan today, US dollar to PKR, GBP to PKR, EUR to PKR, currency converter"
 robots: "index, follow, max-image-preview:large"
 permalink: /currency-converter/
 isHome: false
@@ -18,7 +18,7 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
   "@type": "WebApplication",
   "name": "Payxem Currency Converter",
   "url": "https://payxem.com/currency-converter/",
-  "description": "Free live currency exchange rates and converter for freelancers. USD to PKR, BDT, INR, AED and more — updated hourly.",
+  "description": "Free live currency exchange rates and converter for freelancers. USD to PKR, BDT, INR, AED and 25+ more currencies — updated hourly.",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "All",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -39,6 +39,11 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
       "@type": "Question",
       "name": "How often are exchange rates updated?",
       "acceptedAnswer": { "@type": "Answer", "text": "Exchange rates on Payxem are updated every hour from public market data." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I check GBP to PKR or EUR to INR rates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Change the base currency from the 'From' dropdown to convert between any supported currencies — not just USD." }
     }
   ]
 }
@@ -50,10 +55,10 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
     text-align: center;
   }
   .fx-hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); color: var(--brand); margin-bottom: 8px; }
-  .fx-hero p { color: var(--text-muted); font-size: 1rem; max-width: 520px; margin: 0 auto; }
+  .fx-hero p { color: var(--text-muted); font-size: 1rem; max-width: 540px; margin: 0 auto; }
 
   .fx-card {
-    max-width: 520px; margin: -24px auto 0; position: relative; z-index: 2;
+    max-width: 560px; margin: -24px auto 0; position: relative; z-index: 2;
     background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-md);
     padding: 28px 24px;
   }
@@ -65,8 +70,8 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
   .fx-result-label { font-size: .82rem; color: var(--text-muted); margin-top: 4px; }
   .fx-result-rate { font-size: .78rem; color: var(--teal); font-weight: 600; margin-top: 6px; }
 
-  .fx-input-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 16px; }
-  .fx-input-group { flex: 1; }
+  .fx-input-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; }
+  .fx-input-group { flex: 1; min-width: 100px; }
   .fx-input-group label { display: block; font-size: .78rem; font-weight: 600; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .03em; }
   .fx-input-group input, .fx-input-group select {
     width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
@@ -80,20 +85,24 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
   }
   .fx-swap:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
 
-  .fx-grid {
-    max-width: 720px; margin: 32px auto 0;
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
-    padding: 0 16px;
+  .fx-grid-wrap {
+    max-width: 720px; margin: 32px auto 0; padding: 0 16px;
   }
+  .fx-grid-title { font-size: .85rem; font-weight: 700; color: var(--brand); margin-bottom: 12px; }
+  .fx-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    max-height: 520px; overflow-y: auto; padding-right: 4px;
+  }
+  @media (max-width: 600px) { .fx-grid { grid-template-columns: repeat(2, 1fr); max-height: 460px; } }
   .fx-tile {
     background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius-sm);
-    padding: 16px; text-align: center; transition: .15s;
+    padding: 14px 10px; text-align: center; transition: .15s; cursor: pointer;
   }
   .fx-tile:hover { border-color: var(--teal); box-shadow: var(--shadow-sm); }
-  .fx-tile-flag { font-size: 1.5rem; margin-bottom: 4px; }
-  .fx-tile-code { font-size: .75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
-  .fx-tile-rate { font-size: 1.15rem; font-weight: 800; color: var(--brand); margin-top: 4px; }
-  .fx-tile-name { font-size: .7rem; color: var(--text-muted); margin-top: 2px; }
+  .fx-tile-flag { font-size: 1.4rem; margin-bottom: 2px; }
+  .fx-tile-code { font-size: .72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+  .fx-tile-rate { font-size: 1.05rem; font-weight: 800; color: var(--brand); margin-top: 3px; }
+  .fx-tile-name { font-size: .65rem; color: var(--text-muted); margin-top: 1px; }
 
   .fx-meta { max-width: 720px; margin: 36px auto 0; padding: 0 16px; }
   .fx-meta h2 { font-size: 1.15rem; color: var(--brand); margin-bottom: 8px; }
@@ -110,19 +119,22 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
 {% block content %}
 <section class="fx-hero">
   <h1>Currency Exchange Rates</h1>
-  <p>Live USD exchange rates updated hourly. Check today's dollar rate for PKR, BDT, INR, AED and more.</p>
+  <p>Live exchange rates updated hourly. Convert between 30+ currencies — USD, GBP, EUR, PKR, BDT, INR and more.</p>
 </section>
 
 <div class="fx-card" id="fx-card">
   <div class="fx-spinner" id="fx-loading"></div>
 </div>
 
-<div class="fx-grid" id="fx-grid"></div>
+<div class="fx-grid-wrap">
+  <div class="fx-grid-title" id="fx-grid-title">All rates vs USD</div>
+  <div class="fx-grid" id="fx-grid"></div>
+</div>
 
 <div class="fx-meta">
   <h2>Check Today's Currency Rates</h2>
-  <p>Whether you're a freelancer in Pakistan waiting for an international payment, a business in Bangladesh converting USD, or sending money to family — knowing the latest exchange rate matters. Payxem provides free, hourly-updated exchange rates so you always know what your dollars are worth in local currency.</p>
-  <p>Our rates cover major South Asian and global currencies including Pakistani Rupee (PKR), Bangladeshi Taka (BDT), Indian Rupee (INR), UAE Dirham (AED), Saudi Riyal (SAR), British Pound (GBP), Euro (EUR), and more.</p>
+  <p>Whether you're a freelancer in Pakistan waiting for an international payment, a business in Bangladesh converting USD, or sending money to family — knowing the latest exchange rate matters. Payxem provides free, hourly-updated exchange rates so you always know what your money is worth.</p>
+  <p>Convert between any currencies — check GBP to PKR, EUR to INR, USD to BDT, or any combination. Our rates cover 30 major currencies across South Asia, Middle East, Europe, Africa, and the Americas.</p>
 
   <div class="fx-tags">
     <span class="fx-tag">USD to PKR today</span>
@@ -131,12 +143,16 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
     <span class="fx-tag">Dollar to Rupee</span>
     <span class="fx-tag">USD to INR</span>
     <span class="fx-tag">USD to AED</span>
+    <span class="fx-tag">GBP to PKR</span>
+    <span class="fx-tag">EUR to PKR</span>
     <span class="fx-tag">Live exchange rates</span>
     <span class="fx-tag">Freelancer currency converter</span>
     <span class="fx-tag">USD to SAR</span>
     <span class="fx-tag">Dollar rate today</span>
     <span class="fx-tag">Send money Pakistan</span>
     <span class="fx-tag">International payment rates</span>
+    <span class="fx-tag">GBP to INR</span>
+    <span class="fx-tag">EUR to BDT</span>
   </div>
 
   <p class="fx-disclaimer">Disclaimer: Exchange rates shown are indicative only, sourced from public market data and updated approximately every hour. Actual rates may vary depending on your bank, payment provider, or local state bank. For real-time official rates, please contact your respective bank or financial institution directly. Payxem does not guarantee the accuracy of these rates for financial transactions.</p>
@@ -144,7 +160,8 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
 
 <script>
 'use strict';
-const FX_CURRENCIES = {
+const ALL_CUR = {
+  USD: { flag: '🇺🇸', name: 'US Dollar' },
   PKR: { flag: '🇵🇰', name: 'Pakistani Rupee' },
   BDT: { flag: '🇧🇩', name: 'Bangladeshi Taka' },
   INR: { flag: '🇮🇳', name: 'Indian Rupee' },
@@ -156,16 +173,34 @@ const FX_CURRENCIES = {
   AUD: { flag: '🇦🇺', name: 'Australian Dollar' },
   LKR: { flag: '🇱🇰', name: 'Sri Lankan Rupee' },
   NGN: { flag: '🇳🇬', name: 'Nigerian Naira' },
+  JPY: { flag: '🇯🇵', name: 'Japanese Yen' },
+  CNY: { flag: '🇨🇳', name: 'Chinese Yuan' },
+  KRW: { flag: '🇰🇷', name: 'South Korean Won' },
+  SGD: { flag: '🇸🇬', name: 'Singapore Dollar' },
+  MYR: { flag: '🇲🇾', name: 'Malaysian Ringgit' },
+  THB: { flag: '🇹🇭', name: 'Thai Baht' },
+  PHP: { flag: '🇵🇭', name: 'Philippine Peso' },
+  IDR: { flag: '🇮🇩', name: 'Indonesian Rupiah' },
+  EGP: { flag: '🇪🇬', name: 'Egyptian Pound' },
+  TRY: { flag: '🇹🇷', name: 'Turkish Lira' },
+  ZAR: { flag: '🇿🇦', name: 'South African Rand' },
+  BRL: { flag: '🇧🇷', name: 'Brazilian Real' },
+  MXN: { flag: '🇲🇽', name: 'Mexican Peso' },
+  CHF: { flag: '🇨🇭', name: 'Swiss Franc' },
+  SEK: { flag: '🇸🇪', name: 'Swedish Krona' },
+  NOK: { flag: '🇳🇴', name: 'Norwegian Krone' },
+  NZD: { flag: '🇳🇿', name: 'New Zealand Dollar' },
+  KWD: { flag: '🇰🇼', name: 'Kuwaiti Dinar' },
 };
 
-let _fxRates = {};
+let _fxRatesUSD = {}; // rates with USD base from API
 let _fxDate = '';
 
 async function initFX() {
   try {
     const res = await fetch('https://app.payxem.com/api/exchange-rates');
     const data = await res.json();
-    _fxRates = data.rates || {};
+    _fxRatesUSD = data.rates || {};
     _fxDate = data.date || '';
     renderConverter();
     renderGrid();
@@ -174,26 +209,28 @@ async function initFX() {
   }
 }
 
-function renderConverter() {
-  const defaultCur = detectCurrency();
-  const options = Object.entries(FX_CURRENCIES).map(([code, c]) =>
-    `<option value="${code}" ${code === defaultCur ? 'selected' : ''}>${c.flag} ${code} — ${c.name}</option>`
+function getCurOptions(selected) {
+  return Object.entries(ALL_CUR).map(([code, c]) =>
+    `<option value="${code}" ${code === selected ? 'selected' : ''}>${c.flag} ${code} — ${c.name}</option>`
   ).join('');
+}
 
+function renderConverter() {
+  const defaultTo = detectCurrency();
   document.getElementById('fx-card').innerHTML = `
     <div class="fx-input-row">
       <div class="fx-input-group">
         <label>Amount</label>
         <input type="number" id="fx-amount" value="100" min="0" step="1" oninput="updateFX()">
       </div>
-      <div class="fx-input-group" style="flex:.6">
+      <div class="fx-input-group">
         <label>From</label>
-        <input value="USD 🇺🇸" disabled style="background:var(--bg-alt);font-weight:700">
+        <select id="fx-from" onchange="updateFX();renderGrid()">${getCurOptions('USD')}</select>
       </div>
-      <button class="fx-swap" onclick="swapFX()" title="Swap">⇄</button>
-      <div class="fx-input-group" style="flex:.8">
+      <button class="fx-swap" onclick="swapCurrencies()" title="Swap currencies">⇄</button>
+      <div class="fx-input-group">
         <label>To</label>
-        <select id="fx-to" onchange="updateFX()">${options}</select>
+        <select id="fx-to" onchange="updateFX()">${getCurOptions(defaultTo)}</select>
       </div>
     </div>
     <div class="fx-result" id="fx-result"></div>
@@ -202,44 +239,68 @@ function renderConverter() {
   updateFX();
 }
 
+function getRate(from, to) {
+  if (from === to) return 1;
+  if (from === 'USD') return _fxRatesUSD[to] || 0;
+  if (to === 'USD') return _fxRatesUSD[from] ? 1 / _fxRatesUSD[from] : 0;
+  // Cross rate: FROM→USD→TO
+  const fromUSD = _fxRatesUSD[from];
+  const toUSD = _fxRatesUSD[to];
+  if (!fromUSD || !toUSD) return 0;
+  return toUSD / fromUSD;
+}
+
+function fmt(n) {
+  if (n >= 1000) return Number(n.toFixed(2)).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+  if (n >= 1) return n.toFixed(4);
+  return n.toFixed(6);
+}
+
 function updateFX() {
   const amt = Math.max(0, Number(document.getElementById('fx-amount')?.value) || 0);
+  const from = document.getElementById('fx-from')?.value || 'USD';
   const to = document.getElementById('fx-to')?.value || 'PKR';
-  const rate = _fxRates[to];
+  const rate = getRate(from, to);
   const el = document.getElementById('fx-result');
   const upd = document.getElementById('fx-updated');
   if (!rate) { el.innerHTML = '<p style="color:var(--text-muted)">Rate unavailable</p>'; return; }
-  const converted = (amt * rate).toFixed(2);
-  const info = FX_CURRENCIES[to] || {};
+  const converted = amt * rate;
+  const toInfo = ALL_CUR[to] || {};
+  const fromInfo = ALL_CUR[from] || {};
   el.innerHTML = `
-    <div class="fx-result-amount">${info.flag || ''} ${Number(converted).toLocaleString('en-US', {minimumFractionDigits:2})}</div>
-    <div class="fx-result-label">${amt.toLocaleString()} USD = ${Number(converted).toLocaleString('en-US', {minimumFractionDigits:2})} ${to}</div>
-    <div class="fx-result-rate">1 USD = ${rate.toLocaleString('en-US', {minimumFractionDigits:2})} ${to}</div>
+    <div class="fx-result-amount">${toInfo.flag || ''} ${fmt(converted)}</div>
+    <div class="fx-result-label">${amt.toLocaleString()} ${from} = ${fmt(converted)} ${to}</div>
+    <div class="fx-result-rate">1 ${from} = ${fmt(rate)} ${to}</div>
   `;
-  upd.textContent = _fxDate ? 'Last updated: ' + _fxDate : '';
+  const now = new Date();
+  const time = now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+  upd.textContent = _fxDate ? _fxDate + ' · ' + time + ' · Updates hourly' : '';
 }
 
-function swapFX() {
-  const amtEl = document.getElementById('fx-amount');
+function swapCurrencies() {
+  const fromEl = document.getElementById('fx-from');
   const toEl = document.getElementById('fx-to');
-  const to = toEl?.value || 'PKR';
-  const rate = _fxRates[to];
-  if (!rate || !amtEl) return;
-  const currentAmt = Number(amtEl.value) || 100;
-  // Convert: show how many USD = currentAmt in foreign currency
-  amtEl.value = (currentAmt / rate).toFixed(2);
+  const temp = fromEl.value;
+  fromEl.value = toEl.value;
+  toEl.value = temp;
   updateFX();
+  renderGrid();
 }
 
 function renderGrid() {
+  const base = document.getElementById('fx-from')?.value || 'USD';
   const grid = document.getElementById('fx-grid');
-  grid.innerHTML = Object.entries(FX_CURRENCIES).map(([code, c]) => {
-    const rate = _fxRates[code];
+  const title = document.getElementById('fx-grid-title');
+  const baseInfo = ALL_CUR[base] || {};
+  title.textContent = `All rates vs ${baseInfo.flag || ''} ${base}`;
+
+  grid.innerHTML = Object.entries(ALL_CUR).filter(([code]) => code !== base).map(([code, c]) => {
+    const rate = getRate(base, code);
     if (!rate) return '';
     return `<div class="fx-tile" onclick="document.getElementById('fx-to').value='${code}';updateFX();window.scrollTo({top:0,behavior:'smooth'})">
       <div class="fx-tile-flag">${c.flag}</div>
       <div class="fx-tile-code">${code}</div>
-      <div class="fx-tile-rate">${rate.toLocaleString('en-US', {minimumFractionDigits:2})}</div>
+      <div class="fx-tile-rate">${fmt(rate)}</div>
       <div class="fx-tile-name">${c.name}</div>
     </div>`;
   }).join('');
@@ -259,6 +320,15 @@ function detectCurrency() {
     if (tz.includes('Sydney') || tz.includes('Melbourne')) return 'AUD';
     if (tz.includes('Toronto') || tz.includes('Vancouver')) return 'CAD';
     if (tz.includes('Paris') || tz.includes('Berlin') || tz.includes('Rome')) return 'EUR';
+    if (tz.includes('Tokyo')) return 'JPY';
+    if (tz.includes('Seoul')) return 'KRW';
+    if (tz.includes('Singapore')) return 'SGD';
+    if (tz.includes('Bangkok')) return 'THB';
+    if (tz.includes('Manila')) return 'PHP';
+    if (tz.includes('Jakarta')) return 'IDR';
+    if (tz.includes('Istanbul')) return 'TRY';
+    if (tz.includes('Zurich')) return 'CHF';
+    if (tz.includes('Stockholm')) return 'SEK';
   } catch {}
   return 'PKR';
 }
