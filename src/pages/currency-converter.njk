@@ -86,14 +86,13 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
   .fx-swap:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
 
   .fx-grid-wrap {
-    max-width: 720px; margin: 32px auto 0; padding: 0 16px;
+    max-width: 820px; margin: 32px auto 0; padding: 0 16px;
   }
   .fx-grid-title { font-size: .85rem; font-weight: 700; color: var(--brand); margin-bottom: 12px; }
   .fx-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-    max-height: 520px; overflow-y: auto; padding-right: 4px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
   }
-  @media (max-width: 600px) { .fx-grid { grid-template-columns: repeat(2, 1fr); max-height: 460px; } }
+  @media (max-width: 700px) { .fx-grid { grid-template-columns: repeat(2, 1fr); } }
   .fx-tile {
     background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius-sm);
     padding: 14px 10px; text-align: center; transition: .15s; cursor: pointer;
@@ -165,34 +164,19 @@ const ALL_CUR = {
   PKR: { flag: '🇵🇰', name: 'Pakistani Rupee' },
   BDT: { flag: '🇧🇩', name: 'Bangladeshi Taka' },
   INR: { flag: '🇮🇳', name: 'Indian Rupee' },
+  AFN: { flag: '🇦🇫', name: 'Afghan Afghani' },
+  MVR: { flag: '🇲🇻', name: 'Maldivian Rufiyaa' },
+  NPR: { flag: '🇳🇵', name: 'Nepalese Rupee' },
+  LKR: { flag: '🇱🇰', name: 'Sri Lankan Rupee' },
+  BTN: { flag: '🇧🇹', name: 'Bhutanese Ngultrum' },
   AED: { flag: '🇦🇪', name: 'UAE Dirham' },
   SAR: { flag: '🇸🇦', name: 'Saudi Riyal' },
-  GBP: { flag: '🇬🇧', name: 'British Pound' },
-  EUR: { flag: '🇪🇺', name: 'Euro' },
-  CAD: { flag: '🇨🇦', name: 'Canadian Dollar' },
-  AUD: { flag: '🇦🇺', name: 'Australian Dollar' },
-  LKR: { flag: '🇱🇰', name: 'Sri Lankan Rupee' },
-  NGN: { flag: '🇳🇬', name: 'Nigerian Naira' },
-  JPY: { flag: '🇯🇵', name: 'Japanese Yen' },
-  CNY: { flag: '🇨🇳', name: 'Chinese Yuan' },
-  KRW: { flag: '🇰🇷', name: 'South Korean Won' },
-  SGD: { flag: '🇸🇬', name: 'Singapore Dollar' },
-  MYR: { flag: '🇲🇾', name: 'Malaysian Ringgit' },
-  THB: { flag: '🇹🇭', name: 'Thai Baht' },
-  PHP: { flag: '🇵🇭', name: 'Philippine Peso' },
-  IDR: { flag: '🇮🇩', name: 'Indonesian Rupiah' },
-  EGP: { flag: '🇪🇬', name: 'Egyptian Pound' },
-  TRY: { flag: '🇹🇷', name: 'Turkish Lira' },
-  ZAR: { flag: '🇿🇦', name: 'South African Rand' },
-  BRL: { flag: '🇧🇷', name: 'Brazilian Real' },
-  MXN: { flag: '🇲🇽', name: 'Mexican Peso' },
-  CHF: { flag: '🇨🇭', name: 'Swiss Franc' },
-  SEK: { flag: '🇸🇪', name: 'Swedish Krona' },
-  NOK: { flag: '🇳🇴', name: 'Norwegian Krone' },
-  NZD: { flag: '🇳🇿', name: 'New Zealand Dollar' },
-  KWD: { flag: '🇰🇼', name: 'Kuwaiti Dinar' },
+  OMR: { flag: '🇴🇲', name: 'Omani Rial' },
+  YER: { flag: '🇾🇪', name: 'Yemeni Rial' },
+  BHD: { flag: '🇧🇭', name: 'Bahraini Dinar' },
   QAR: { flag: '🇶🇦', name: 'Qatari Riyal' },
-  HKD: { flag: '🇭🇰', name: 'Hong Kong Dollar' },
+  KWD: { flag: '🇰🇼', name: 'Kuwaiti Dinar' },
+  GBP: { flag: '🇬🇧', name: 'British Pound' },
 };
 
 let _fxRatesUSD = {}; // rates with USD base from API
