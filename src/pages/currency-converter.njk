@@ -191,6 +191,8 @@ const ALL_CUR = {
   NOK: { flag: '🇳🇴', name: 'Norwegian Krone' },
   NZD: { flag: '🇳🇿', name: 'New Zealand Dollar' },
   KWD: { flag: '🇰🇼', name: 'Kuwaiti Dinar' },
+  QAR: { flag: '🇶🇦', name: 'Qatari Riyal' },
+  HKD: { flag: '🇭🇰', name: 'Hong Kong Dollar' },
 };
 
 let _fxRatesUSD = {}; // rates with USD base from API
@@ -251,9 +253,9 @@ function getRate(from, to) {
 }
 
 function fmt(n) {
-  if (n >= 1000) return Number(n.toFixed(2)).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
-  if (n >= 1) return n.toFixed(4);
-  return n.toFixed(6);
+  if (n >= 100) return Number(n.toFixed(2)).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+  if (n >= 1) return n.toFixed(2);
+  return n.toFixed(4);
 }
 
 function updateFX() {
