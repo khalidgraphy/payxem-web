@@ -74,8 +74,8 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
   .fx-input-group { flex: 1; min-width: 100px; }
   .fx-input-group label { display: block; font-size: .78rem; font-weight: 600; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .03em; }
   .fx-input-group input, .fx-input-group select {
-    width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
-    font-size: 1rem; font-weight: 600; color: var(--text); background: var(--bg);
+    width: 100%; padding: 10px 10px; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+    font-size: .82rem; font-weight: 600; color: var(--text); background: var(--bg);
   }
   .fx-input-group input:focus, .fx-input-group select:focus { outline: none; border-color: var(--brand); }
   .fx-swap {
@@ -211,7 +211,7 @@ async function initFX() {
 
 function getCurOptions(selected) {
   return Object.entries(ALL_CUR).map(([code, c]) =>
-    `<option value="${code}" ${code === selected ? 'selected' : ''}>${c.flag} ${code} — ${c.name}</option>`
+    `<option value="${code}" ${code === selected ? 'selected' : ''}>${c.flag} ${code}</option>`
   ).join('');
 }
 
