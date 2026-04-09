@@ -1,0 +1,247 @@
+---
+layout: base.njk
+title: "Join the Waitlist | Payxem - Invoice & Payment Platform for Freelancers"
+description: "Join the Payxem waitlist. Be among the first freelancers to access simple invoicing and payments via PayPal, Stripe, and Crypto. Invite-only early access."
+keywords: "Payxem waitlist, join Payxem, freelancer payments, PayPal alternative Pakistan, Stripe for freelancers, invoice payments"
+robots: "index, follow"
+permalink: /join/
+isHome: false
+ogTitle: "Join the Payxem Waitlist"
+ogDescription: "Be among the first freelancers to get paid faster with Payxem. Simple invoicing, multiple payment options, low fees."
+---
+
+{% block extraHead %}
+<style>
+  .join-hero {
+    padding: calc(var(--nav-h) + 48px) 0 48px;
+    background: linear-gradient(160deg, #fff 0%, var(--bg-alt) 50%, #EEF2F9 100%);
+    text-align: center;
+  }
+  .join-hero h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 800; color: var(--heading); margin-bottom: 8px; }
+  .join-hero p { font-size: .95rem; color: var(--body); max-width: 520px; margin: 0 auto; }
+
+  .join-form-wrap {
+    max-width: 560px;
+    margin: -24px auto 48px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.08);
+    padding: 32px 28px;
+    position: relative;
+    z-index: 2;
+  }
+  .jf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .jf-full { grid-column: 1 / -1; }
+  .jf-label { display: block; font-size: .78rem; font-weight: 600; color: var(--heading); margin-bottom: 4px; }
+  .jf-label .req { color: #EF4444; }
+  .jf-input {
+    width: 100%; padding: 11px 14px; border: 1.5px solid #E5E7EB; border-radius: 10px;
+    font-size: .85rem; font-family: inherit; transition: border-color .15s; background: #FAFBFC;
+  }
+  .jf-input:focus { outline: none; border-color: var(--brand); background: #fff; }
+  select.jf-input { appearance: auto; }
+  textarea.jf-input { resize: vertical; min-height: 70px; }
+  .jf-check-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+  .jf-check-label {
+    display: flex; align-items: center; gap: 6px; font-size: .82rem; color: var(--body);
+    cursor: pointer; padding: 6px 12px; border: 1.5px solid #E5E7EB; border-radius: 8px; transition: all .15s;
+  }
+  .jf-check-label:has(input:checked) { border-color: var(--brand); background: #EEF2F9; color: var(--brand); font-weight: 600; }
+  .jf-check-label input { display: none; }
+  .jf-submit {
+    width: 100%; padding: 16px; background: linear-gradient(135deg, #1A3060, #2B4A8E); color: #fff;
+    border: none; border-radius: 12px; font-size: 1rem; font-weight: 800; cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26,48,96,.25); transition: transform .1s;
+  }
+  .jf-submit:active { transform: scale(.98); }
+  .jf-submit:disabled { opacity: .55; cursor: not-allowed; }
+  .jf-msg { text-align: center; padding: 8px; border-radius: 8px; font-size: .82rem; font-weight: 600; margin-bottom: 12px; display: none; }
+  .jf-msg.error { background: #FEF2F2; color: #DC2626; display: block; }
+  .jf-msg.success { background: #F0FDF4; color: #16A34A; display: block; }
+
+  .join-success { text-align: center; padding: 40px 20px; }
+  .join-success h2 { font-size: 1.5rem; font-weight: 800; color: var(--heading); margin-bottom: 8px; }
+  .join-success p { font-size: .9rem; color: var(--body); }
+
+  @media (max-width: 500px) {
+    .jf-grid { grid-template-columns: 1fr; }
+    .join-form-wrap { margin: -16px 12px 32px; padding: 24px 18px; }
+  }
+</style>
+{% endblock %}
+
+<section class="join-hero">
+  <div class="container">
+    <h1>Join the Payxem Waitlist</h1>
+    <p>We're currently invite-only. Submit your interest and we'll send you an invite when your spot is ready.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="join-form-wrap">
+    <div id="jf-msg" class="jf-msg"></div>
+    <form id="join-form">
+      <div class="jf-grid">
+
+        <div>
+          <label class="jf-label">Full Name <span class="req">*</span></label>
+          <input class="jf-input" name="name" required placeholder="Your full name">
+        </div>
+        <div>
+          <label class="jf-label">Email <span class="req">*</span></label>
+          <input class="jf-input" name="email" type="email" required placeholder="you@email.com">
+        </div>
+
+        <div>
+          <label class="jf-label">Phone</label>
+          <input class="jf-input" name="phone" type="tel" placeholder="+92 300 1234567">
+        </div>
+        <div>
+          <label class="jf-label">Gender</label>
+          <select class="jf-input" name="gender">
+            <option value="">Select...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="jf-label">City</label>
+          <input class="jf-input" name="city" placeholder="Your city">
+        </div>
+        <div>
+          <label class="jf-label">Country</label>
+          <select class="jf-input" name="country" id="jf-country">
+            <option value="">Select country...</option>
+          </select>
+        </div>
+
+        <div class="jf-full">
+          <label class="jf-label">Business Name <span style="font-weight:400;color:var(--body)">(optional)</span></label>
+          <input class="jf-input" name="business_name" placeholder="Your studio or company">
+        </div>
+
+        <div class="jf-full">
+          <label class="jf-label">Primary Service</label>
+          <select class="jf-input" name="service_id" id="jf-service">
+            <option value="">Select your service...</option>
+          </select>
+        </div>
+
+        <div class="jf-full">
+          <label class="jf-label">Payment Gateway Needed</label>
+          <div class="jf-check-group">
+            <label class="jf-check-label"><input type="checkbox" name="gw" value="PayPal"> PayPal</label>
+            <label class="jf-check-label"><input type="checkbox" name="gw" value="Stripe"> Stripe (Cards)</label>
+            <label class="jf-check-label"><input type="checkbox" name="gw" value="Crypto"> Crypto</label>
+            <label class="jf-check-label"><input type="checkbox" name="gw" value="Bank Transfer"> Bank Transfer</label>
+          </div>
+        </div>
+
+        <div>
+          <label class="jf-label">Preferred Currency</label>
+          <select class="jf-input" name="currency">
+            <option value="">Select...</option>
+            <option>USD</option>
+            <option>EUR</option>
+            <option>GBP</option>
+            <option>AED</option>
+            <option>CAD</option>
+            <option>PKR</option>
+            <option>BDT</option>
+            <option>INR</option>
+          </select>
+        </div>
+        <div></div>
+
+        <div class="jf-full">
+          <label class="jf-label">Why do you need Payxem? <span style="font-weight:400;color:var(--body)">(optional)</span></label>
+          <textarea class="jf-input" name="reason" placeholder="Tell us about your freelance work and payment challenges..." maxlength="500"></textarea>
+        </div>
+
+        <div class="jf-full" style="margin-top:4px">
+          <button type="submit" class="jf-submit" id="jf-btn">Join the Waitlist</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(async function() {
+  const API = '{{ site.appUrl }}';
+
+  // Load countries (same list as app profile)
+  const countries = ["Afghanistan","Albania","Algeria","Argentina","Australia","Austria","Azerbaijan","Bahrain","Bangladesh","Belgium","Brazil","Canada","Chile","China","Colombia","Czech Republic","Denmark","Egypt","Estonia","Ethiopia","Finland","France","Germany","Ghana","Greece","Hong Kong","Hungary","India","Indonesia","Iraq","Ireland","Israel","Italy","Japan","Jordan","Kazakhstan","Kenya","Kuwait","Latvia","Lebanon","Libya","Lithuania","Malaysia","Mexico","Morocco","Nepal","Netherlands","New Zealand","Nigeria","Norway","Oman","Pakistan","Palestine","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Saudi Arabia","Serbia","Singapore","Slovakia","Slovenia","Somalia","South Africa","South Korea","Spain","Sri Lanka","Sudan","Sweden","Switzerland","Syria","Taiwan","Thailand","Tunisia","Turkey","UAE","Uganda","Ukraine","United Kingdom","United States","Uzbekistan","Venezuela","Vietnam","Yemen"];
+  const sel = document.getElementById('jf-country');
+  countries.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+
+  // Load services from app API
+  try {
+    const res = await fetch(API + '/api/services');
+    const data = await res.json();
+    const svcSel = document.getElementById('jf-service');
+    let lastCat = '';
+    (data.services || []).forEach(s => {
+      if (s.category !== lastCat) {
+        if (lastCat) svcSel.appendChild(document.createElement('option')).disabled = true;
+        const og = document.createElement('optgroup');
+        og.label = s.category;
+        svcSel.appendChild(og);
+        lastCat = s.category;
+      }
+      const o = document.createElement('option');
+      o.value = s.id; o.textContent = s.name;
+      svcSel.lastChild.appendChild(o);
+    });
+  } catch(e) {}
+
+  // Form submit
+  document.getElementById('join-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const msg = document.getElementById('jf-msg');
+    const btn = document.getElementById('jf-btn');
+    msg.className = 'jf-msg'; msg.textContent = '';
+
+    const fd = new FormData(this);
+    const body = {};
+    body.name = fd.get('name')?.trim();
+    body.email = fd.get('email')?.trim();
+    body.phone = fd.get('phone')?.trim();
+    body.gender = fd.get('gender');
+    body.city = fd.get('city')?.trim();
+    body.country = fd.get('country');
+    body.business_name = fd.get('business_name')?.trim();
+    body.service_id = fd.get('service_id') ? Number(fd.get('service_id')) : null;
+    body.currency = fd.get('currency');
+    body.reason = fd.get('reason')?.trim();
+    // Checkboxes
+    const gws = [...document.querySelectorAll('input[name="gw"]:checked')].map(cb => cb.value);
+    body.payment_gateway = gws.join(', ');
+
+    if (!body.name) { msg.className = 'jf-msg error'; msg.textContent = 'Name is required'; return; }
+    if (!body.email) { msg.className = 'jf-msg error'; msg.textContent = 'Email is required'; return; }
+
+    btn.disabled = true; btn.textContent = 'Submitting...';
+    try {
+      const res = await fetch(API + '/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      if (res.ok) {
+        document.getElementById('join-form').innerHTML = '<div class="join-success"><h2>You\'re on the list!</h2><p>We\'ll send you an invite when your spot is ready.<br>Keep an eye on your inbox.</p></div>';
+        msg.className = 'jf-msg'; msg.textContent = '';
+      } else {
+        msg.className = 'jf-msg error'; msg.textContent = data.error || 'Something went wrong';
+        btn.disabled = false; btn.textContent = 'Join the Waitlist';
+      }
+    } catch(err) {
+      msg.className = 'jf-msg error'; msg.textContent = 'Network error. Please try again.';
+      btn.disabled = false; btn.textContent = 'Join the Waitlist';
+    }
+  });
+})();
+</script>
