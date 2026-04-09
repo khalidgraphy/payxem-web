@@ -17,7 +17,7 @@
     "items": [
       {
         "question": "Is Payxem free to use?",
-        "answer": "Yes. There are no monthly fees or setup costs. You only pay a small transaction fee (3.5% + $0.30) when you receive a payment. Your client can also choose to cover this fee at checkout."
+        "answer": "Yes. There are no monthly fees or setup costs. You only pay a small platform fee (2.9% + $0.30) when you receive a payment. Payment processors (PayPal, Stripe) apply their own fees based on their policy. Your client can also choose to cover the processing fee at checkout."
       },
       {
         "question": "What payment methods do my clients have?",
@@ -33,7 +33,7 @@
       },
       {
         "question": "How long does it take to get paid?",
-        "answer": "Payments are held for a short clearing period by our payment partners for security purposes, then released to your available balance. Withdrawal times depend on your chosen method but typically take 1-3 business days."
+        "answer": "Funds are released within 7 business/working days after security clearance. Business days exclude weekends and public holidays. Withdrawal times depend on your chosen method but typically take 1-3 business days after funds are available."
       },
       {
         "question": "Do I need to verify my identity?",

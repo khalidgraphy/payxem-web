@@ -55,7 +55,7 @@ It works alongside platforms like PayPal, Stripe, and crypto providers.
 
 **Payoneer:** Fees are often hidden in conversion rates and processing charges.
 
-**Payxem:** Clear platform fee (3.5% + $0.30) with a visible breakdown. Clients can even [cover the fee at checkout](/#pricing).
+**Payxem:** Clear platform fee (2.9% + $0.30) with a visible breakdown. Payment processors (PayPal, Stripe) apply their own fees. Clients can even [cover the processing fee at checkout](/#pricing).
 
 ### User Experience
 

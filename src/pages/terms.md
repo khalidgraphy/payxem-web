@@ -52,7 +52,7 @@ You are fully responsible for:
 
 ## 4. Payments and Fees
 
-Payxem charges a platform service fee of **3.5% + $0.30** per payment received. This fee is subject to change with or without prior notice. Any updates to fees will be reflected on the Payxem website and communicated to users via push notification.
+Payxem charges a platform service fee of **2.9% + $0.30** per payment received. Payment processors (PayPal, Stripe) apply their own fees based on their policy. This fee is subject to change with or without prior notice. Any updates to fees will be reflected on the Payxem website and communicated to users via push notification.
 
 ### Important:
 
@@ -96,7 +96,8 @@ Users must provide accurate payout details. Payxem is not responsible for losses
 
 To meet security standards and third-party processor requirements:
 
-- Payments may be subject to a holding period of up to 10 days
+- Funds are released within 7 business/working days after security clearance
+- Business days exclude weekends (Saturday & Sunday) and public holidays
 - Funds are marked as "pending" until cleared
 
 This helps:
