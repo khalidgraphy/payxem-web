@@ -57,7 +57,25 @@
   {% include "footer.njk" %}
 
   <!-- Floating QR Card -->
-  <a href="/waitlist/" id="qr-float" style="position:fixed;bottom:20px;right:20px;z-index:900;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.12);padding:14px 16px;text-decoration:none;display:flex;align-items:center;gap:12px;max-width:280px;transition:transform .2s,box-shadow .2s;border:1.5px solid #E5E7EB" onmouseenter="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,.16)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 8px 32px rgba(0,0,0,.12)'">
+  <style>
+    @keyframes qr-float-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes qr-pulse { 0%,100% { box-shadow: 0 8px 32px rgba(26,48,96,.12), 0 0 0 0 rgba(26,48,96,.15); } 50% { box-shadow: 0 8px 32px rgba(26,48,96,.12), 0 0 0 6px rgba(26,48,96,.06); } }
+    @keyframes qr-slide-in { from { opacity:0; transform: translateY(40px); } to { opacity:1; transform: translateY(0); } }
+    #qr-float {
+      position:fixed; bottom:20px; right:20px; z-index:900; background:#fff; border-radius:16px;
+      padding:14px 16px; text-decoration:none; display:flex; align-items:center; gap:12px; max-width:280px;
+      border:1.5px solid #E5E7EB; cursor:pointer;
+      animation: qr-slide-in .5s ease-out, qr-float-bob 3s ease-in-out 1s infinite, qr-pulse 3s ease-in-out 1s infinite;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    #qr-float:hover {
+      transform: scale(1.08) translateY(-4px) !important;
+      box-shadow: 0 16px 48px rgba(26,48,96,.2), 0 0 0 4px rgba(26,48,96,.08) !important;
+      animation: none;
+    }
+    @media (max-width: 500px) { #qr-float { bottom:12px; right:12px; max-width:250px; padding:10px 12px; gap:10px; } }
+  </style>
+  <a href="/waitlist/" id="qr-float">
     <div style="flex-shrink:0">
       <img src="/images/PayXem-QR-join.png" alt="Scan to join Payxem" width="72" height="72" style="border-radius:8px;display:block" loading="lazy">
     </div>
