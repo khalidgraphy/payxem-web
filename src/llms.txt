@@ -35,7 +35,7 @@ Payxem is designed as an online payment solution for Pakistan and similar region
 - No monthly fees or setup costs
 - Platform fee: 2.9% + $0.30 per payment received. Payment processors (PayPal, Stripe) apply their own fees based on their policy
 - Clients can choose to cover the processing fee at checkout
-- Free withdrawals (standard processing time)
+- Free withdrawals from Payxem — Payxem does not charge any fee on withdrawals. Standard currency exchange or bank transfer fees may apply by partner or processing banks
 
 ## Keywords
 

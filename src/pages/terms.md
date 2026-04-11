@@ -88,7 +88,8 @@ Payxem may:
 
 - Approve, delay, or reject withdrawal requests
 - Require identity verification or additional information
-- Apply fees depending on withdrawal method
+
+Payxem does not charge any fee on withdrawals. However, standard currency exchange or bank transfer fees may apply by partner or processing banks.
 
 Users must provide accurate payout details. Payxem is not responsible for losses due to incorrect information.
 
