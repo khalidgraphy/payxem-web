@@ -1,6 +1,7 @@
 {
   "layout": "blog-post.njk",
   "tags": "blog",
+  "robots": "index, follow, max-image-preview:large",
   "isHome": false,
   "extraCss": "/css/blog.css",
   "permalink": "/blog/{{ page.fileSlug }}/"
