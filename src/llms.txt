@@ -47,4 +47,4 @@ Payxem invoice payments, PayPal and Stripe solution Pakistan, online payment sol
 - App: https://app.payxem.com
 - Terms of Service: https://payxem.com/terms
 - Privacy Policy: https://payxem.com/privacy
-- Disputes & Chargebacks: https://payxem.com/disputes
+- Disputes & Refunds: https://payxem.com/disputes-and-refunds

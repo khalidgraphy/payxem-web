@@ -1,14 +1,14 @@
 ---
 layout: legal.njk
-title: "Disputes and Chargebacks - Payxem"
-description: "Payxem disputes and chargebacks policy. Learn how payment holds, dispute resolution, chargebacks, and negative balances are handled on the Payxem platform."
-keywords: "Payxem disputes, Payxem chargebacks, payment holds, dispute resolution, negative balance, freelancer payment disputes"
+title: "Disputes & Refunds - Payxem"
+description: "Payxem disputes and refunds policy. Learn how payment holds, dispute resolution, chargebacks, and negative balances are handled on the Payxem platform."
+keywords: "Payxem disputes, Payxem refunds, payment holds, dispute resolution, negative balance, freelancer payment disputes"
 lastUpdated: "11 April 2026"
-permalink: /disputes/
+permalink: /disputes-and-refunds/
 isHome: false
 robots: "index, follow"
-ogTitle: "Disputes and Chargebacks - Payxem"
-ogDescription: "Understand how Payxem handles payment holds, disputes, chargebacks, and negative balances for service providers."
+ogTitle: "Disputes & Refunds - Payxem"
+ogDescription: "Understand how Payxem handles payment holds, disputes, refunds, and negative balances for service providers."
 ogImage: "https://payxem.com/images/PayXem-Icon.png"
 ---
 
