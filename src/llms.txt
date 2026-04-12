@@ -1,6 +1,6 @@
 # Payxem
 
-> Simple Invoice & Link Payments - PayPal & Stripe Solution for Freelancers
+> Simple invoicing and payment platform for freelancers
 
 Payxem is an online invoicing and payment tracking platform built for freelancers, consultants, and small businesses - especially in Pakistan, Bangladesh, and other underserved markets.
 

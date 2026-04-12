@@ -3,8 +3,9 @@ title: "How to Send Professional Invoices to International Clients From Pakistan
 description: "Learn how freelancers in Pakistan can send professional invoices to international clients. Step-by-step guide with tips to get paid faster."
 date: 2026-03-25
 category: "Tips"
-featuredImage: "/images/How to Send Professional Invoices to International Clients.jpg"
+featuredImage: "https://payxem.com/images/How to Send Professional Invoices to International Clients.jpg"
 featuredImageAlt: "Send professional invoices to international clients from Pakistan"
+keywords: "send invoices international clients, professional invoice Pakistan, freelancer invoicing guide, invoice template freelancers, billing international clients"
 readTime: 4
 ---
 
