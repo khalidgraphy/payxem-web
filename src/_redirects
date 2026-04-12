@@ -2,5 +2,5 @@
 # https://www.payxem.com/* https://payxem.com/:splat 301
 
 # Old waitlist URL redirect
-/join /waitlist 301
+/join /waitlist/ 301
 /join/ /waitlist/ 301
