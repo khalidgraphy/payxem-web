@@ -1339,10 +1339,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 0 16px;
 }
 .footer-disclaimer {
-  font-size: .5625rem;
-  color: rgba(255,255,255,.2);
+  font-size: .625rem;
+  color: rgba(255,255,255,.4);
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
 .footer-disclaimer .footer-label {
   color: var(--teal);
