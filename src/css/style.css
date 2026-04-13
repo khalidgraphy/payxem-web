@@ -1339,9 +1339,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 0 16px;
 }
 .footer-disclaimer {
-  font-size: .625rem;
+  font-size: .6875rem;
   color: rgba(255,255,255,.4);
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
 }
 .footer-disclaimer .footer-label {
