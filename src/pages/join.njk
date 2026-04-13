@@ -304,7 +304,51 @@ ogImage: "https://payxem.com/images/PayXem-Icon.png"
       });
       const data = await res.json();
       if (res.ok) {
-        document.getElementById('join-form').innerHTML = '<div class="join-success"><h2>You\'re on the list!</h2><p>We\'ll send you an invite when your spot is ready.<br>Keep an eye on your inbox.</p></div>';
+        if (data.auto_invite && data.waitlist_id && data.token) {
+          // Auto-invite path: show countdown then send invite
+          const form = document.getElementById('join-form');
+          const delay = Math.floor(Math.random() * 11) + 15; // 15–25s
+          let remaining = delay;
+          form.innerHTML = `
+            <div style="text-align:center;padding:32px 16px">
+              <div id="ai-spinner" style="width:56px;height:56px;border:5px solid #E5E7EB;border-top-color:#1A3060;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 20px"></div>
+              <div style="font-size:1.05rem;font-weight:700;color:#1A3060;margin-bottom:6px">Analysing your application…</div>
+              <div style="font-size:.82rem;color:#6B7280;margin-bottom:18px">Our system is reviewing your details. Please wait.</div>
+              <div style="font-size:2rem;font-weight:800;color:#1A3060;font-variant-numeric:tabular-nums" id="ai-countdown">${remaining}s</div>
+            </div>
+            <style>@keyframes spin{to{transform:rotate(360deg)}}</style>`;
+          const timer = setInterval(async () => {
+            remaining--;
+            const cd = document.getElementById('ai-countdown');
+            if (cd) cd.textContent = remaining + 's';
+            if (remaining <= 0) {
+              clearInterval(timer);
+              try {
+                const r2 = await fetch(API + '/api/waitlist/auto-invite', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ id: data.waitlist_id, token: data.token })
+                });
+                const d2 = await r2.json();
+                if (r2.ok && (d2.success || d2.already)) {
+                  form.innerHTML = `<div class="join-success">
+                    <h2 style="color:#059669">You\'re Approved!</h2>
+                    <p>Please check your <strong>Email inbox</strong> for your signup link.<br>
+                    Also check your <strong>Promotions</strong> and <strong>Spam</strong> folder<br>if you don\'t see it within a few minutes.</p>
+                  </div>`;
+                } else {
+                  // Limit hit or error — soft fallback
+                  form.innerHTML = '<div class="join-success"><h2>You\'re on the list!</h2><p>We\'ll send you an invite when your spot is ready.<br>Keep an eye on your inbox.</p></div>';
+                }
+              } catch {
+                form.innerHTML = '<div class="join-success"><h2>You\'re on the list!</h2><p>We\'ll send you an invite when your spot is ready.<br>Keep an eye on your inbox.</p></div>';
+              }
+            }
+          }, 1000);
+        } else {
+          // Manual queue path — unchanged
+          document.getElementById('join-form').innerHTML = '<div class="join-success"><h2>You\'re on the list!</h2><p>We\'ll send you an invite when your spot is ready.<br>Keep an eye on your inbox.</p></div>';
+        }
         msg.className = 'jf-msg'; msg.textContent = '';
       } else {
         msg.className = 'jf-msg error'; msg.textContent = data.error || 'Something went wrong';
