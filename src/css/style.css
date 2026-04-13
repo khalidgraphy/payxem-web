@@ -1263,6 +1263,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .08em;
   text-transform: uppercase;
   color: rgba(255,255,255,.9);
+  text-align: center;
   margin-bottom: 10px;
 }
 .footer-divider-v {
@@ -1284,15 +1285,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .footer-reads-list {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0 32px;
     align-items: start;
-  }
-  .footer-reads-list h4 {
-    align-self: center;
-    text-align: center;
-    white-space: nowrap;
-    margin-bottom: 0;
   }
 }
 .footer-reads-col a {
