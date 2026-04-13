@@ -2,7 +2,7 @@
 layout: legal.njk
 title: "Terms of Service - Payxem"
 description: "Payxem Terms of Service - Read the terms and conditions governing your use of the Payxem platform."
-lastUpdated: "1 April 2026"
+lastUpdated: "13 April 2026"
 permalink: /terms/
 isHome: false
 robots: "index, follow"
@@ -10,11 +10,13 @@ robots: "index, follow"
 
 ## 1. Overview
 
-Payxem is an invoicing, payment coordination, and financial tracking platform operated by a group of companies and partnerships, including entities based in the UAE, US, UK, and other affiliated jurisdictions.
+Payxem is an invoicing and payment platform that enables users to create invoices, share payment links, and track payments from clients globally.
 
-Payxem is not a bank, financial institution, or licensed money service provider.
+Payxem is operated by LINC GLOBAL HUB INC., a Delaware, USA registered company, with support from affiliated partners across different regions.
 
-By accessing or using Payxem, you agree to these Terms.
+Payxem is not a bank, financial institution, or licensed payment processor.
+
+By accessing or using Payxem, you agree to these Terms of Service.
 
 ## 2. Nature of Service
 
@@ -23,177 +25,161 @@ Payxem provides tools for:
 - Creating and sending invoices
 - Generating payment links
 - Tracking payment status and transaction records
-- Managing a ledger-based wallet view
-- Submitting payout and withdrawal requests
+- Viewing balances through a ledger-based system
+- Submitting withdrawal or payout requests
 
-Payxem operates as a technology and coordination platform.
+Payxem operates as a technology platform.
 
-### Important clarification:
+All payments are processed by third-party providers such as PayPal, Stripe, or other supported channels. Payxem does not process payments directly.
 
-- Payments are processed through third-party providers such as PayPal, Stripe, or other supported channels
-- Payments may be received into accounts designated by Payxem or its affiliated entities for settlement and distribution
-- Payxem does not operate as a custodial wallet, bank, or escrow service
+Payxem does not operate as a bank, custodial wallet, escrow service, or money transmission provider.
 
 ## 3. User Responsibilities
 
-You agree to:
+By using Payxem, you agree to:
 
 - Provide accurate and complete information
-- Use Payxem only for lawful purposes
+- Use the platform only for lawful purposes
 - Comply with all applicable laws and regulations
 - Maintain the security of your account credentials
 
-You are fully responsible for:
+You are solely responsible for:
 
-- Your services or products
-- Client agreements and communication
-- Delivery, fulfillment, and quality of work
+- The services or products you offer
+- Agreements and communication with your clients
+- Delivery, quality, and fulfillment of your work
 - Handling disputes, refunds, and claims
 
 ## 4. Payments and Fees
 
-Payxem charges a platform service fee of **2.9% + $0.30** per payment received. Payment processors (PayPal, Stripe) apply their own fees based on their policy. This fee is subject to change with or without prior notice. Any updates to fees will be reflected on the Payxem website and communicated to users via push notification.
+Payxem charges a platform service fee of **2.9% + $0.30** per successful payment.
 
-### Important:
+Additional fees may apply from third-party providers such as PayPal or Stripe, based on their own policies.
 
-- Payment processor fees such as PayPal or Stripe are separate
-- Exchange rates and external charges may apply
-- Users may choose to pass certain fees to clients where supported
+Exchange rates, bank charges, or other external fees may also apply.
 
-All balances shown in Payxem are system-calculated records, not stored funds.
+Users may choose to pass certain fees to clients where supported.
+
+All fees are subject to change. Any updates will be reflected on the Payxem website and communicated where applicable.
 
 ## 5. Ledger and Balance Display
 
-The "wallet", "available balance", and "pending balance" shown in Payxem represent:
+The "wallet", "available balance", and "pending balance" shown in Payxem represent internal ledger records.
 
-- Internal ledger calculations
-- Transaction tracking based on payment confirmations
-- Estimated amounts after fees and adjustments
+These balances:
 
-These values:
+- Reflect transaction tracking based on confirmed payments
+- Are system-calculated estimates after fees and adjustments
+- Do not represent funds held in a bank account
+- Are not safeguarded or insured balances
 
-- Do not represent funds held in a safeguarded account
-- Are not bank balances
-- May differ from actual processor or bank balances
+Actual funds are processed and held by third-party providers until settlement.
 
 ## 6. Payouts and Withdrawals
 
-Payout requests submitted through Payxem:
+Withdrawal requests submitted through Payxem are requests for settlement and distribution of funds.
 
-- Are requests for settlement and distribution
-- Are subject to review, verification, and approval
+All payout requests:
+
+- Are subject to review and approval
+- May require identity verification or additional information
 - May be processed manually or through integrated channels
 
-Payxem may:
+Payxem may approve, delay, or reject withdrawal requests based on risk, compliance, or operational requirements.
 
-- Approve, delay, or reject withdrawal requests
-- Require identity verification or additional information
+Payxem does not charge fees for withdrawals. However, external fees such as bank transfer or currency conversion charges may apply.
 
-Payxem does not charge any fee on withdrawals. However, standard currency exchange or bank transfer fees may apply by partner or processing banks.
-
-Users must provide accurate payout details. Payxem is not responsible for losses due to incorrect information.
+Users are responsible for providing accurate payout details. Payxem is not liable for losses due to incorrect information.
 
 ## 7. Holding Period and Risk Control
 
-To meet security standards and third-party processor requirements:
+To maintain security and comply with third-party requirements:
 
-- Funds are released within 7 business/working days after security clearance
-- Business days exclude weekends (Saturday & Sunday) and public holidays
-- Funds are marked as "pending" until cleared
+- Payments are subject to a security clearance period of up to 7 business days
+- Business days exclude weekends and public holidays
+- Funds remain in a pending state until cleared
 
-This helps:
-
-- Reduce fraud risk
-- Manage chargebacks and reversals
-- Ensure compliance with payment partners
+This process helps manage fraud risk, chargebacks, and operational compliance.
 
 ## 8. Disputes and Chargebacks
 
 Payxem does not mediate disputes between users and their clients.
 
-All disputes must be handled:
+All disputes must be handled directly with the client or through the relevant payment processor.
 
-- Directly between the user and client
-- Or through the relevant payment processor
-
-In case of dispute, chargeback, or refund:
+In case of disputes, chargebacks, or refunds:
 
 - Payxem may adjust the user's ledger balance
 - Deduct amounts from available or future balances
 - Temporarily restrict withdrawals
 
-If funds have already been withdrawn:
+If funds have already been withdrawn, the user remains fully liable for the amount.
 
-- The user remains fully liable
-- Payxem may recover the amount from future earnings
-- Payxem may suspend payouts or restrict the account
-- Legal recovery actions may be initiated if required
-
-Users agree to cooperate and maintain sufficient balance to cover potential reversals.
+Payxem reserves the right to recover such amounts from future earnings or take further action where necessary.
 
 ## 9. Prohibited Activities
 
-You may not use Payxem for:
+Users may not use Payxem for:
 
 - Fraudulent or deceptive activities
 - Illegal goods or services
 - Money laundering or misuse of financial systems
 - Identity misuse or misrepresentation
 
-Accounts may be restricted or terminated without notice if violations are detected.
+Accounts may be restricted or terminated if such activities are detected.
 
 ## 10. Account Suspension and Termination
 
-We may suspend, restrict, or terminate accounts if:
+Payxem may suspend, restrict, or terminate accounts if:
 
 - These Terms are violated
 - Suspicious or high-risk activity is detected
-- Required verification or compliance steps are not completed
+- Required verification steps are not completed
 
-You may stop using Payxem at any time.
+Users may stop using Payxem at any time.
 
 ## 11. Data and Privacy
 
-Payxem collects and processes data required to operate the platform, including:
+Payxem collects and processes data necessary to operate the platform, including:
 
 - User profile information
-- Invoice and transaction records
-- Usage and activity data
+- Invoice and transaction data
+- Usage and activity records
 
-We implement reasonable security measures. Full details are available in our [Privacy Policy](/privacy).
+Reasonable security measures are implemented. For full details, refer to the [Privacy Policy](/privacy).
 
 ## 12. Third-Party Services
 
-Payxem relies on third-party providers including:
+Payxem relies on third-party providers, including:
 
 - Payment processors
-- Email and communication services
+- Communication services
 - Hosting and infrastructure providers
 
-We are not responsible for:
+Payxem is not responsible for:
 
-- Their availability or downtime
-- Their fees or policies
-- Errors or failures on their systems
+- Downtime or service interruptions
+- External fees or policy changes
+- Errors or failures within third-party systems
 
 ## 13. Limitation of Liability
 
 Payxem is provided on an "as is" and "as available" basis.
 
-We are not liable for:
+Payxem is not liable for:
 
 - Financial losses or missed payments
 - Delays caused by third-party providers
 - Disputes between users and clients
 - Data loss beyond reasonable control
 
-Use of Payxem is at your own risk.
+Use of the platform is at your own risk.
 
 ## 14. Changes to Terms
 
-We may update these Terms at any time. Changes will be posted on this page with an updated "Last updated" date and communicated to users via push notification.
+These Terms may be updated at any time.
 
-Continued use of Payxem after updates means you accept the revised Terms.
+Updates will be posted on this page with a revised "Last updated" date. Continued use of Payxem after changes indicates acceptance of the updated Terms.
 
 ## 15. Contact
 
