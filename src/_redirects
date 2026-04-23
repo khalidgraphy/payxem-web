@@ -1,6 +1,8 @@
 # Redirect www to non-www (if custom domain is set up)
 # https://www.payxem.com/* https://payxem.com/:splat 301
 
-# Old waitlist URL redirect
-/join /waitlist/ 301
-/join/ /waitlist/ 301
+# Waitlist deprecated — all waitlist URLs now land on the live app.
+/join https://app.payxem.com 301
+/join/ https://app.payxem.com 301
+/waitlist https://app.payxem.com 301
+/waitlist/ https://app.payxem.com 301
