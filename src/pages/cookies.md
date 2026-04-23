@@ -123,7 +123,7 @@ Most browsers allow you to control cookies and local storage through their setti
 
 **Opt Out of Analytics:**
 - Google Analytics: [Google Analytics Opt-out](https://tools.google.com/dlpage/gaoptout)
-- Umami: No opt-out needed — Umami does not use cookies or track individual users
+- Umami: No opt-out needed, Umami does not use cookies or track individual users
 
 **Mobile Devices:**
 - iOS: Settings > Safari > Block All Cookies
