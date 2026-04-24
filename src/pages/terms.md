@@ -2,7 +2,7 @@
 layout: legal.njk
 title: "Terms of Service - Payxem"
 description: "Payxem Terms of Service - Read the terms and conditions governing your use of the Payxem platform."
-lastUpdated: "13 April 2026"
+lastUpdated: "24 April 2026"
 permalink: /terms/
 isHome: false
 robots: "index, follow"
@@ -10,7 +10,7 @@ robots: "index, follow"
 
 ## 1. Overview
 
-Payxem is an invoicing and payment platform that enables users to create invoices, share payment links, and track payments from clients globally.
+Payxem is the Digitalancers Platform, a technology platform that gives freelancers, consultants, and small businesses three connected products: Payments (invoices, pay links, and a ledger wallet at app.payxem.com), a Digital Business Card (at pxem.link/@username), and a Portfolio page (at {username}.payxem.com).
 
 Payxem is operated by LINC GLOBAL HUB INC., a Delaware, USA registered company, with support from affiliated partners across different regions.
 
@@ -27,6 +27,8 @@ Payxem provides tools for:
 - Tracking payment status and transaction records
 - Viewing balances through a ledger-based system
 - Submitting withdrawal or payout requests
+- Publishing a Digital Business Card at pxem.link/@username
+- Publishing a Portfolio page at {username}.payxem.com
 
 Payxem operates as a technology platform.
 
@@ -117,7 +119,31 @@ If funds have already been withdrawn, the user remains fully liable for the amou
 
 Payxem reserves the right to recover such amounts from future earnings or take further action where necessary.
 
-## 9. Prohibited Activities
+## 9. Public Pages, User Content, and Usernames
+
+Your Digital Business Card (pxem.link/@username), Portfolio ({username}.payxem.com), and pay link pages are public surfaces. You are solely responsible for the content you publish on them, including text, images, testimonials, service descriptions, FAQ, and any files uploaded (for example, hero or gallery images).
+
+You grant Payxem a non-exclusive, worldwide, royalty-free license to host, cache, display, and distribute the content you publish, only to the extent required to operate the platform and deliver the public pages to visitors. You retain ownership of your content.
+
+Username and subdomain policy:
+
+- Each user account has a single username that powers all three surfaces (pxem.link/@username, app.payxem.com/p/{username}, and {username}.payxem.com).
+- Username changes are capped at **two lifetime renames per user** (measured from the first rename). This cap exists to prevent brand hijacking and link rot. The global cap and per-user override may be adjusted by Payxem.
+- When a username is released, the old slug is reserved for **60 days** to prevent squatting and confusion.
+- Certain words are reserved and cannot be used as a username, including infrastructure terms, payment-platform names, regulated brands, government names, phishing-style terms, and words Payxem holds for internal or moderation use. The reserved list may be updated at any time.
+- Payxem may force-rename any username that violates these Terms, infringes a trademark, impersonates another person or entity, or is used in bad faith. Forced renames do not count toward your two-rename cap.
+
+You may not:
+
+- Impersonate another person, brand, or organization on any Payxem-hosted page.
+- Publish content that infringes trademarks, copyrights, or other intellectual property rights.
+- Use your public pages to host adult content, illegal content, malware, or phishing material.
+- Use a reserved, brand-protected, or high-risk slug without written authorization from Payxem.
+- Abuse the quote-request or contact flows on Portfolio and Card pages to send spam, scams, or unsolicited marketing.
+
+Payxem may remove content, unpublish pages, reassign slugs, or suspend accounts that violate this section. See also the [Acceptable Use Policy](/acceptable-use/).
+
+## 10. Prohibited Activities
 
 Users may not use Payxem for:
 
@@ -128,7 +154,7 @@ Users may not use Payxem for:
 
 Accounts may be restricted or terminated if such activities are detected.
 
-## 10. Account Suspension and Termination
+## 11. Account Suspension and Termination
 
 Payxem may suspend, restrict, or terminate accounts if:
 
@@ -138,7 +164,7 @@ Payxem may suspend, restrict, or terminate accounts if:
 
 Users may stop using Payxem at any time.
 
-## 11. Data and Privacy
+## 12. Data and Privacy
 
 Payxem collects and processes data necessary to operate the platform, including:
 
@@ -148,7 +174,7 @@ Payxem collects and processes data necessary to operate the platform, including:
 
 Reasonable security measures are implemented. For full details, refer to the [Privacy Policy](/privacy).
 
-## 12. Third-Party Services
+## 13. Third-Party Services
 
 Payxem relies on third-party providers, including:
 
@@ -162,7 +188,7 @@ Payxem is not responsible for:
 - External fees or policy changes
 - Errors or failures within third-party systems
 
-## 13. Limitation of Liability
+## 14. Limitation of Liability
 
 Payxem is provided on an "as is" and "as available" basis.
 
@@ -175,13 +201,13 @@ Payxem is not liable for:
 
 Use of the platform is at your own risk.
 
-## 14. Changes to Terms
+## 15. Changes to Terms
 
 These Terms may be updated at any time.
 
 Updates will be posted on this page with a revised "Last updated" date. Continued use of Payxem after changes indicates acceptance of the updated Terms.
 
-## 15. Contact
+## 16. Contact
 
 For support or questions:
 

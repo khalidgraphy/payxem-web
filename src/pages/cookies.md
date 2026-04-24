@@ -2,7 +2,7 @@
 layout: legal.njk
 title: "Cookie Policy - Payxem"
 description: "Payxem Cookie Policy - How we use cookies, local storage, and similar technologies on our website and platform."
-lastUpdated: "12 April 2026"
+lastUpdated: "24 April 2026"
 permalink: /cookies/
 isHome: false
 robots: "index, follow"
@@ -13,6 +13,18 @@ robots: "index, follow"
 Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences, improve your experience, and provide analytics about how the site is used.
 
 Payxem primarily uses **local storage** and **session storage** (similar browser technologies) rather than traditional cookies. These work the same way but are managed by your browser and are not sent to servers with every request.
+
+**Where this policy applies**
+
+This policy covers all Payxem-owned surfaces, including:
+
+- `payxem.com` (this marketing site)
+- `app.payxem.com` (the Payments web app)
+- `pxem.link` and `pxem.link/@username` (your Digital Business Card)
+- `{username}.payxem.com` (your Portfolio page)
+- `hi.payxem.com` (legacy cards host)
+
+Payxem public pages (Cards, Portfolios, pay links) generally do **not** set tracking cookies for visitors. Request-level logs (IP, user agent, referrer, country) may still be recorded to prevent abuse, rate-limit traffic, and power the page owner's analytics. See the [Privacy Policy](/privacy/) for details on public page visitor logs.
 
 ---
 

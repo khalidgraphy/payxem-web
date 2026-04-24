@@ -27,7 +27,7 @@ A resume lists tasks. A portfolio shows outcomes. For freelancers, consultants, 
 
 ## What You Get with a Payxem Portfolio
 
-Your Payxem portfolio sits inside the [Digitalancers Ecosystem](/), which means it is not just a static page. It connects to:
+Your Payxem portfolio sits inside the [Digitalancers Platform](/), which means it is not just a static page. It connects to:
 
 - **Payment links** so clients can hire you and pay directly from your portfolio.
 - **A digital business card** at [pxem.link](https://pxem.link) for quick sharing.

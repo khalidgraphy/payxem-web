@@ -3,7 +3,7 @@ layout: legal.njk
 title: "Disputes & Refunds - Payxem"
 description: "Payxem disputes and refunds policy. Learn how payment holds, dispute resolution, chargebacks, and negative balances are handled on the Payxem platform."
 keywords: "Payxem disputes, Payxem refunds, payment holds, dispute resolution, negative balance, freelancer payment disputes"
-lastUpdated: "11 April 2026"
+lastUpdated: "24 April 2026"
 permalink: /disputes-and-refunds/
 isHome: false
 robots: "index, follow"
@@ -66,3 +66,19 @@ Service providers are responsible for:
 - Ensuring sufficient balance is available to cover potential disputes, reversals, or fees
 
 Failure to meet these responsibilities may result in account limitations, delayed payouts, or additional review.
+
+## Public Page Reports and Takedowns
+
+Payxem hosts public pages for every user: a Digital Business Card at pxem.link/@username and a Portfolio at {username}.payxem.com. These surfaces are separate from payment disputes, but they are also subject to Payxem's review.
+
+**Reporting abuse on a public page**
+
+If you see impersonation, infringement, scams, or any content that violates the [Acceptable Use Policy](/acceptable-use/) on a Payxem-hosted page, report it to support@payxem.com with the subject line "Public Page Report" and include the URL plus a short description.
+
+**Quote-request spam**
+
+Portfolio pages include a quote-request form. If a visitor abuses this form (spam, phishing, harassment), the page owner can flag the submission and Payxem may rate-limit, block, or remove the sender from contacting other users.
+
+**Takedowns and forced renames**
+
+Payxem may remove content, unpublish a Card or Portfolio, reassign a username, or force-rename a user where a public page violates the Terms or Acceptable Use Policy. Forced renames follow the process described in the [Terms of Service](/terms/#9-public-pages-user-content-and-usernames).

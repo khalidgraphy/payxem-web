@@ -2,7 +2,7 @@
 layout: legal.njk
 title: "Acceptable Use Policy - Payxem"
 description: "Payxem Acceptable Use Policy - Prohibited activities, user responsibilities, compliance requirements, and enforcement guidelines."
-lastUpdated: "12 April 2026"
+lastUpdated: "24 April 2026"
 permalink: /acceptable-use/
 isHome: false
 robots: "index, follow"
@@ -41,6 +41,15 @@ You may not use Payxem for any of the following:
 **Sanctions and Embargoes**
 - Transactions involving countries, entities, or individuals subject to economic sanctions
 - Violations of export controls or trade embargoes
+
+**Misuse of Public Pages (Digital Card, Portfolio, Pay Links)**
+- Impersonating another person, brand, or organization on pxem.link/@username, {username}.payxem.com, or any Payxem-hosted pay page
+- Registering or using a username that infringes a trademark, is a government or regulator name, is a payment-platform brand, or is otherwise on the reserved-subdomains list
+- Squatting on usernames with the intent to resell, ransom, or block legitimate claimants
+- Publishing misleading services, fake testimonials, fake verification marks, or content designed to deceive buyers
+- Hosting adult content, gambling content, political campaign material, or regulated financial advice on Portfolio or Card pages without prior written authorization from Payxem
+- Embedding malware, phishing forms, redirect chains, or obfuscated scripts on any Payxem-hosted page
+- Abusing the Portfolio quote-request or Card contact flows to send spam, unsolicited marketing, or bulk outreach
 
 ---
 

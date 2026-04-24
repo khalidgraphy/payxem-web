@@ -2,7 +2,7 @@
 layout: legal.njk
 title: "Privacy Policy - Payxem"
 description: "Payxem Privacy Policy - Learn how we collect, use, store, and protect your personal information."
-lastUpdated: "1 April 2026"
+lastUpdated: "24 April 2026"
 intro: "Payxem (\"Payxem\", \"we\", \"our\", or \"us\") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and share your information when you use our website and services.<br><br>By using Payxem, you agree to the practices described in this policy."
 permalink: /privacy/
 isHome: false
@@ -11,7 +11,7 @@ robots: "index, follow"
 
 ## 1. What Payxem Does
 
-Payxem is an invoicing and financial tracking platform. We enable users to create invoices, send payment links, track payments, and manage earnings.
+Payxem is the Digitalancers Platform, a technology platform for three connected products: **Payments** (invoices, pay links, and a ledger wallet at app.payxem.com), **Digital Business Card** (pxem.link/@username), and **Portfolio** ({username}.payxem.com). We enable users to create invoices, send payment links, track payments, manage earnings, and publish public profile pages.
 
 Payments are processed through third-party providers such as PayPal and Stripe. Payxem does not operate as a bank or licensed financial institution.
 
@@ -34,6 +34,23 @@ We collect information to provide and improve our services.
 - Payment records and statuses
 - Wallet and ledger activity
 - Withdrawal and payout requests
+
+### b2. Public Profile Content (Digital Card and Portfolio)
+
+When you publish a Digital Business Card or Portfolio page, we store and display:
+
+- Your username, display name, avatar, verified (KYC) status, and bio or tagline
+- Contact methods you choose to show (WhatsApp, email, phone, socials)
+- Portfolio content you create (about sections, services, testimonials, FAQ, gallery images, hero images)
+- Quote requests submitted to your Portfolio by visitors (name, email, message)
+
+This content is intentionally public and is served at pxem.link/@username and {username}.payxem.com. You control what is published and can unpublish at any time from your dashboard.
+
+### b3. Public Page Visitor Logs
+
+For visits to your Digital Business Card or Portfolio, we may log basic request-level data (IP address, approximate country, user agent, timestamp, referrer) to prevent abuse, rate-limit traffic, and understand aggregate usage of the platform.
+
+Payxem does not currently run an in-app QR scanner. When someone scans your Card or Portfolio QR with their phone's native camera, it simply opens the public page in their browser, and the visit is logged the same way as any other web visit.
 
 ### c. Device and Technical Data
 

@@ -29,7 +29,7 @@ The link is shareable, the design is mobile-first, and the update is instant. Wh
 
 ## Why a Payxem Digital Business Card Stands Out
 
-There are plenty of digital card builders. What makes the Payxem card different is the ecosystem around it.
+There are plenty of digital card builders. What makes the Payxem card different is the platform around it.
 
 Every Payxem user gets a short link at `pxem.link/@yourusername` that serves as the front door to everything else:
 
@@ -39,7 +39,7 @@ Every Payxem user gets a short link at `pxem.link/@yourusername` that serves as 
 - **QR code** auto-generated for your card.
 - **Free forever**, no subscription, no trial, no credit card.
 
-One link, one identity, one simple system, aligned with the [Digitalancers Ecosystem](/) positioning of keeping payments, portfolio, and presence in one place.
+One link, one identity, one simple system, aligned with the [Digitalancers Platform](/) positioning of keeping payments, portfolio, and presence in one place.
 
 ## Step-by-Step: Build Your Digital Business Card
 

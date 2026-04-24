@@ -5,9 +5,10 @@
     </a>
     <div class="nav-links">
       <a href="/features" class="nav-link"{% if activeNav == "features" %} style="color: var(--brand); font-weight: 600;"{% endif %}>Features</a>
-      <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}" class="nav-link">How It Works</a>
+      <a href="https://app.payxem.com" class="nav-link" target="_blank" rel="noopener">Payments</a>
+      <a href="https://pxem.link" class="nav-link" target="_blank" rel="noopener">Digital Card</a>
+      <a href="/features/#portfolio" class="nav-link">Portfolio</a>
       <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}" class="nav-link">Pricing</a>
-      <a href="{% if isHome %}#security{% else %}/#security{% endif %}" class="nav-link">Security</a>
       <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}" class="nav-link">FAQ</a>
     </div>
     <div class="nav-cta">
@@ -19,9 +20,11 @@
   </div>
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
     <a href="/features" data-nav-close>Features</a>
+    <a href="https://app.payxem.com" target="_blank" rel="noopener" data-nav-close>Payments</a>
+    <a href="https://pxem.link" target="_blank" rel="noopener" data-nav-close>Digital Card</a>
+    <a href="/features/#portfolio" data-nav-close>Portfolio</a>
     <a href="{% if isHome %}#how-it-works{% else %}/#how-it-works{% endif %}" data-nav-close>How It Works</a>
     <a href="{% if isHome %}#pricing{% else %}/#pricing{% endif %}" data-nav-close>Pricing</a>
-    <a href="{% if isHome %}#security{% else %}/#security{% endif %}" data-nav-close>Security</a>
     <a href="{% if isHome %}#faq{% else %}/#faq{% endif %}" data-nav-close>FAQ</a>
     <a href="https://app.payxem.com" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Start Free</a>
   </div>
