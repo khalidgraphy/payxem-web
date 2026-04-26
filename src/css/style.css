@@ -1448,3 +1448,36 @@ h1, h2, h3, h4, h5, h6 {
   .section-header { margin-bottom: 40px; }
   .pricing-header, .pricing-body { padding-left: 24px; padding-right: 24px; }
 }
+
+/* Hero bridge line: defines "digitalancers" once, sits between sub and CTAs */
+.hero-subtitle + .hero-bridge {
+  font-size: .8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: -20px;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+/* Manifesto section: brand-tinted panel between Features and How It Works */
+.section.manifesto {
+  background: var(--brand-light);
+}
+.manifesto-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.manifesto-inner .section-label {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.manifesto-inner .headline-lg {
+  margin-bottom: 20px;
+}
+.manifesto-body {
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin: 0 auto;
+}
