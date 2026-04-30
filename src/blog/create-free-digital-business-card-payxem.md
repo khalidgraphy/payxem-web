@@ -1,19 +1,21 @@
 ---
-title: "How to Create a Free Digital Business Card with Payxem"
-description: "Make a free digital business card at pxem.link. Share your identity, services, portfolio, and payment links with one simple URL. Step-by-step guide for freelancers, consultants, and small businesses."
+title: "How to Create a Free Digital Business Card with MyKard.link"
+description: "Make a free digital business card at mykard.link. Share your identity, services, portfolio, and payment links with one simple URL. Step-by-step guide for freelancers, consultants, and small businesses."
 date: 2026-04-23
 category: "Business Card"
 featuredImage: "https://payxem.com/images/How to Create a Free Digital Business Card with Payxem.jpg"
-featuredImageAlt: "Create a free digital business card with Payxem and pxem.link for freelancers and professionals"
-keywords: "digital business card, online contact card, free business card, virtual business card, pxem.link, QR code business card, digital vCard, personal branding link, business card for freelancers, electronic business card"
+featuredImageAlt: "Create a free digital business card with MyKard.link for freelancers and professionals"
+keywords: "digital business card, online contact card, free business card, virtual business card, mykard.link, QR code business card, digital vCard, personal branding link, business card for freelancers, electronic business card"
 readTime: 6
 ---
 
+> **Note:** Digital Business Cards now live at [MyKard.link](https://mykard.link), Payxem's sister product. Payxem itself focuses on Payments and Portfolio. The guide below has been updated to point to MyKard.link.
+
 Paper business cards are nearly dead. Most of them end up in a drawer, a bin, or lost in a bag. Even the ones that survive expire the moment you change your phone number or your role.
 
-A digital business card fixes all of that. It lives at a single link, updates instantly, works on any phone, and can be shared over WhatsApp, email, or a QR code scan in under two seconds. With Payxem, your card also connects directly to your portfolio, payment link, and contact details, so a new contact can move from "met you" to "paid you" without ever leaving the same screen.
+A digital business card fixes all of that. It lives at a single link, updates instantly, works on any phone, and can be shared over WhatsApp, email, or a QR code scan in under two seconds. With MyKard.link, your card connects directly to your portfolio, payment link, and contact details, so a new contact can move from "met you" to "paid you" without ever leaving the same screen.
 
-This guide shows you how to build a free digital business card with Payxem at [pxem.link](https://pxem.link), and how to use it to grow your network and your income.
+This guide shows you how to build a free digital business card with MyKard.link at [mykard.link](https://mykard.link), and how to use it to grow your network and your income.
 
 ## What Is a Digital Business Card
 
@@ -27,33 +29,33 @@ A digital business card, also called an online contact card or digital vCard, is
 
 The link is shareable, the design is mobile-first, and the update is instant. When your rate, phone number, or role changes, you edit it once and every card you have ever handed out is already up to date.
 
-## Why a Payxem Digital Business Card Stands Out
+## Why a MyKard.link Digital Business Card Stands Out
 
-There are plenty of digital card builders. What makes the Payxem card different is the platform around it.
+There are plenty of digital card builders. What makes MyKard.link different is the platform around it.
 
-Every Payxem user gets a short link at `pxem.link/@yourusername` that serves as the front door to everything else:
+Every MyKard.link user gets a short link at `mykard.link/@yourusername` that serves as the front door to everything else:
 
-- **Invoice and payment link** built in.
+- **Invoice and payment link** built in via Payxem.
 - **Portfolio page** linked directly from the card.
 - **Contact capture** so visitors can save your details.
 - **QR code** auto-generated for your card.
 - **Free forever**, no subscription, no trial, no credit card.
 
-One link, one identity, one simple system, aligned with the [Digitalancers Platform](/) positioning of keeping payments, portfolio, and presence in one place.
+One link, one identity, one simple system, with optional payments handled by Payxem when you're ready to start invoicing.
 
 ## Step-by-Step: Build Your Digital Business Card
 
-### Step 1. Create Your Payxem Account
+### Step 1. Create Your MyKard.link Account
 
-Visit [app.payxem.com](https://app.payxem.com) and enter your email. A magic login link arrives in your inbox. No password to invent or forget. Sign up once and your card, portfolio, and payment tools are all unlocked.
+Visit [app.mykard.link](https://app.mykard.link) and enter your email. A magic login link arrives in your inbox. No password to invent or forget. Sign up once and your card is ready to publish.
 
 ### Step 2. Claim Your Username
 
-Your digital business card URL will be `pxem.link/@yourusername`. Pick a username that matches how you are known professionally. Your name, your brand, or a short handle works well. Keep it short, memorable, and typeable on mobile.
+Your digital business card URL will be `mykard.link/@yourusername`. Pick a username that matches how you are known professionally. Your name, your brand, or a short handle works well. Keep it short, memorable, and typeable on mobile.
 
 ### Step 3. Add Your Profile Photo
 
-A real photo outperforms a logo on a personal card every time. Use a head-and-shoulders shot with good lighting and a plain background. Aim for a square image at least 400x400 pixels. Payxem compresses automatically, so file size is not a concern.
+A real photo outperforms a logo on a personal card every time. Use a head-and-shoulders shot with good lighting and a plain background. Aim for a square image at least 400x400 pixels. MyKard.link compresses automatically, so file size is not a concern.
 
 ### Step 4. Write a Clear Headline
 
@@ -77,13 +79,13 @@ Hide the channels you do not monitor. Nothing kills a first impression faster th
 
 ### Step 6. Link Your Portfolio, Payment, and Socials
 
-Inside Payxem, link your business card directly to your [free portfolio page](/blog/create-free-portfolio-website-payxem/) and your payment link so visitors can go from discovery to action in a single click. Add social profiles selectively: LinkedIn is universal, plus the one or two platforms where you actually post work.
+Inside MyKard.link, link your business card directly to your [free portfolio page](/blog/create-free-portfolio-website-payxem/) at Payxem and your payment link so visitors can go from discovery to action in a single click. Add social profiles selectively: LinkedIn is universal, plus the one or two platforms where you actually post work.
 
 ### Step 7. Highlight a Main Call to Action
 
 Every card should have one clear primary button. The most effective options:
 
-- **Hire Me** connects to your payment link, ideal for freelancers ready to close.
+- **Hire Me** connects to your Payxem payment link, ideal for freelancers ready to close.
 - **View Portfolio** directs visitors to your work, ideal if your portfolio does the selling.
 - **Book a Call** links to a calendar tool, ideal for consultants.
 
@@ -91,7 +93,7 @@ Pick one. Secondary actions can live lower on the card. The primary CTA should b
 
 ### Step 8. Generate and Place Your QR Code
 
-Your Payxem card comes with a QR code that resolves to your `pxem.link` URL. Use it for:
+Your MyKard.link card comes with a QR code that resolves to your `mykard.link` URL. Use it for:
 
 - Printed materials, conference badges, trade show posters.
 - Email signatures.
@@ -100,7 +102,7 @@ Your Payxem card comes with a QR code that resolves to your `pxem.link` URL. Use
 
 Print it big enough to scan from a meter away. A QR under 2 cm square on a printed card is frustrating to scan. Aim for at least 3 cm.
 
-### Step 9. Share Your pxem.link Everywhere
+### Step 9. Share Your mykard.link Everywhere
 
 Your card is only valuable when it reaches people. Share it:
 
@@ -121,7 +123,7 @@ Even a personal card benefits from thoughtful metadata:
 - **Alt text** on your profile photo describing you by name.
 - **Consistent bio** across your card, LinkedIn, and portfolio so AI tools can confidently connect them to the same person.
 
-AI-powered search increasingly surfaces personal cards when someone searches "[your name] [your skill]". A well-structured Payxem card with clear copy has a much better chance of showing up than a dozen scattered social profiles.
+AI-powered search increasingly surfaces personal cards when someone searches "[your name] [your skill]". A well-structured MyKard.link card with clear copy has a much better chance of showing up than a dozen scattered social profiles.
 
 ## Design Principles That Always Work
 
@@ -156,9 +158,9 @@ Because the URL never changes, every card you have ever shared now points to the
 
 A digital business card is no longer a nice-to-have. For freelancers, consultants, and small businesses, it is the easiest way to present a professional identity online and to be discoverable both by people and by AI search tools.
 
-With Payxem, you can build that card in a few minutes, connect it to your portfolio and payment link, and share it through one simple URL. There is no subscription, no hidden cost, and no setup fee.
+With MyKard.link, you can build that card in a few minutes, connect it to your Payxem portfolio and payment link, and share it through one simple URL. There is no subscription, no hidden cost, and no setup fee.
 
-**Get started:** [Create your free Payxem account](https://app.payxem.com) and publish your digital business card at [pxem.link](https://pxem.link) today. One link, one professional presence, ready to share everywhere you work.
+**Get started:** [Create your free MyKard.link account](https://app.mykard.link) and publish your digital business card at [mykard.link](https://mykard.link) today. One link, one professional presence, ready to share everywhere you work.
 
 **Related reads:**
 
